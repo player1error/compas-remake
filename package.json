@@ -1,0 +1,194 @@
+{
+  "name": "codekompas",
+  "version": "0.2.0",
+  "description": "Nederlandstalige codehints zonder correcties, met een apart luik voor programmeerprincipes.",
+  "main": "./dist/extension.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "package": "vsce package --no-dependencies --allow-missing-repository",
+    "bundle": "node scripts/bundle.js",
+    "vscode:prepublish": "npm run bundle"
+  },
+  "keywords": [],
+  "author": "Joris Petillion",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "acorn": "^8.19.0",
+    "acorn-loose": "^8.5.2",
+    "acorn-walk": "^8.3.5",
+    "eslint-scope": "^8.4.0",
+    "parse5": "^7.3.0",
+    "postcss": "^8.5.31",
+    "postcss-safe-parser": "^7.1.0",
+    "postcss-value-parser": "^4.2.0",
+    "vscode-css-languageservice": "^6.3.10",
+    "vscode-html-languageservice": "^5.6.2",
+    "vscode-languageserver-textdocument": "^1.0.15"
+  },
+  "displayName": "CodeKompas — leren zonder voorzeggen",
+  "publisher": "codekompas",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Education",
+    "Linters"
+  ],
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:css",
+    "onLanguage:javascript"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true,
+      "description": "Analyseert alleen tekst, voert geen leerlingcode uit."
+    },
+    "virtualWorkspaces": true
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "codekompas.open",
+        "title": "CodeKompas: Open leerhulp"
+      },
+      {
+        "command": "codekompas.analyze",
+        "title": "CodeKompas: Nu analyseren"
+      },
+      {
+        "command": "codekompas.pause",
+        "title": "CodeKompas: Pauzeer of hervat hints"
+      },
+      {
+        "command": "codekompas.resetIgnored",
+        "title": "CodeKompas: Herstel genegeerde woorden"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "codekompas",
+          "title": "CodeKompas",
+          "icon": "media/compass.svg"
+        }
+      ]
+    },
+    "views": {
+      "codekompas": [
+        {
+          "type": "webview",
+          "id": "codekompas.panel",
+          "name": "Leerhulp"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "CodeKompas",
+      "properties": {
+        "codekompas.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Schakel de lokale codehints in."
+        },
+        "codekompas.principles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Toon ook programmeerprincipes in het aparte luik."
+        },
+        "codekompas.maxHints": {
+          "type": "number",
+          "default": 8,
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Maximaal aantal gelijktijdige hints per bestand."
+        },
+        "codekompas.delay": {
+          "type": "number",
+          "default": 900,
+          "minimum": 200,
+          "maximum": 5000,
+          "description": "Rusttijd na het typen, in milliseconden."
+        },
+        "codekompas.maxCharacters": {
+          "type": "number",
+          "default": 250000,
+          "minimum": 1000,
+          "maximum": 1000000,
+          "description": "Sla grotere bestanden over om de editor vlot te houden."
+        },
+        "codekompas.ignoreWords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "Bewust gebruikte namen waarvoor geen spellinghint nodig is."
+        },
+        "codekompas.disabledPrinciples": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "naming",
+              "callbacks",
+              "collections",
+              "equality",
+              "templates",
+              "destructuring",
+              "selectors",
+              "boxmodel",
+              "units",
+              "semantics",
+              "accessibility",
+              "styling",
+              "functions",
+              "arrays",
+              "objects",
+              "conditions",
+              "loops",
+              "dom",
+              "json",
+              "async",
+              "scope",
+              "layout",
+              "cascade",
+              "es6",
+              "dry",
+              "tokens",
+              "bem",
+              "components",
+              "gestalt",
+              "events"
+            ]
+          },
+          "default": [],
+          "description": "Principes die nog niet aan bod hoeven te komen."
+        },
+        "codekompas.maxPrinciples": {
+          "type": "number",
+          "default": 8,
+          "minimum": 1,
+          "maximum": 30,
+          "description": "Maximaal aantal conceptkaarten tegelijk in de aparte tab."
+        },
+        "codekompas.styleConventions": {
+          "type": "boolean",
+          "default": true,
+          "description": "Toon leesbaarheidsadvies voor hoofdletters in geldige standaard CSS-eigenschappen. Dit zijn geen syntaxfouten."
+        },
+        "codekompas.indentationHints": {
+          "type": "boolean",
+          "default": true,
+          "description": "Signaleer gemengde tabs en spaties bij code-inspringing als leesbaarheidsadvies, niet als syntaxfout."
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^4.0.0",
+    "esbuild": "^0.28.2",
+    "jsdom": "^26.1.0"
+  }
+}

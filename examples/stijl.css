@@ -1,0 +1,19 @@
+:root {
+  --accentkleur: #245878;
+}
+.boek {
+  colro: #245878;
+  margin-bottom: 16px;
+}
+.knop {
+  display: felx;
+  padding: 16px;
+  background-color: #245878;
+}
+main {
+  padding: 16px;
+  border: 1px solid #245878;
+}
+h1 {
+  color: var(--accentkleu);
+}
