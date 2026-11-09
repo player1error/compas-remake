@@ -1,0 +1,21 @@
+{
+  "description": "Local coding hints and a separate guide to programming principles.",
+  "displayName": "CodeKompas — guided coding practice",
+  "untrusted": "Analyzes source text locally without running student code.",
+  "codekompas.open": "CodeKompas: Open Learning Support",
+  "codekompas.analyze": "CodeKompas: Analyze Now",
+  "codekompas.pause": "CodeKompas: Pause or Resume Hints",
+  "codekompas.resetIgnored": "CodeKompas: Reset Ignored Words",
+  "codekompas.toggleLanguage": "CodeKompas: Switch English / Dutch",
+  "panel": "Learning Support",
+  "codekompas.enabled": "Enable local coding hints.",
+  "codekompas.principles": "Show programming principles in a separate tab.",
+  "codekompas.maxHints": "Maximum number of hints shown at once per file.",
+  "codekompas.delay": "Time to wait after typing, in milliseconds.",
+  "codekompas.maxCharacters": "Skip larger files to keep the editor responsive.",
+  "codekompas.ignoreWords": "Names you deliberately use and want CodeKompas to skip when checking spelling.",
+  "codekompas.disabledPrinciples": "Programming principles to hide for now.",
+  "codekompas.maxPrinciples": "Maximum number of concept cards shown at once in the Programming Principles tab.",
+  "codekompas.styleConventions": "Show readability advice for capitalization in valid standard CSS property names.",
+  "codekompas.indentationHints": "Show readability advice when code indentation mixes tabs and spaces."
+}

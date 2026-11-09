@@ -1,0 +1,21 @@
+{
+  "description": "Nederlandstalige codehints zonder correcties, met een apart luik voor programmeerprincipes.",
+  "displayName": "CodeKompas — leren zonder voorzeggen",
+  "untrusted": "Analyseert alleen tekst, voert geen leerlingcode uit.",
+  "codekompas.open": "CodeKompas: Open leerhulp",
+  "codekompas.analyze": "CodeKompas: Nu analyseren",
+  "codekompas.pause": "CodeKompas: Pauzeer of hervat hints",
+  "codekompas.resetIgnored": "CodeKompas: Herstel genegeerde woorden",
+  "codekompas.toggleLanguage": "CodeKompas: Wissel Engels / Nederlands",
+  "panel": "Leerhulp",
+  "codekompas.enabled": "Schakel de lokale codehints in.",
+  "codekompas.principles": "Toon ook programmeerprincipes in het aparte luik.",
+  "codekompas.maxHints": "Maximaal aantal gelijktijdige hints per bestand.",
+  "codekompas.delay": "Rusttijd na het typen, in milliseconden.",
+  "codekompas.maxCharacters": "Sla grotere bestanden over om de editor vlot te houden.",
+  "codekompas.ignoreWords": "Bewust gebruikte namen waarvoor geen spellinghint nodig is.",
+  "codekompas.disabledPrinciples": "Principes die nog niet aan bod hoeven te komen.",
+  "codekompas.maxPrinciples": "Maximaal aantal conceptkaarten tegelijk in de aparte tab.",
+  "codekompas.styleConventions": "Toon leesbaarheidsadvies voor hoofdletters in geldige standaard CSS-eigenschappen. Dit zijn geen syntaxfouten.",
+  "codekompas.indentationHints": "Signaleer gemengde tabs en spaties bij code-inspringing als leesbaarheidsadvies, niet als syntaxfout."
+}

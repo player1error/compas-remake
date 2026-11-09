@@ -1,9 +1,9 @@
 'use strict';
 const Module=require('node:module');
-function harness(entry='../src/extension'){ 
+function harness(entry='../src/extension',language='nl'){
  const handlers={},commands={},values=new Map(),records=new Map(),messages=[],configuration={delay:200};let provider;
  const disposable=()=>({dispose(){}}),event=name=>cb=>{handlers[name]=cb;return disposable();};
- const doc={uri:{toString:()=> 'file:///lesson.js',path:'/lesson.js'},languageId:'javascript',version:1,isClosed:false,text:'document.getElementByID("x")',getText(){return this.text;},positionAt(offset){return {line:this.text.slice(0,offset).split('\n').length-1,character:offset};}};
+ const doc={uri:{toString:()=> 'file:///lesson.js',path:'/lesson.js'},languageId:'javascript',version:1,isClosed:false,text:'document.getElementByID("x")',getText(){return this.text;},lineAt(line){return {text:this.text.split(/\r?\n/)[line]};},positionAt(offset){return {line:this.text.slice(0,offset).split('\n').length-1,character:offset};}};
  class Range{constructor(start,end){this.start=start;this.end=end;}}
  class Diagnostic{constructor(range,message,severity){Object.assign(this,{range,message,severity});}}
  const editor={document:doc,revealRange(){}};
@@ -14,7 +14,9 @@ function harness(entry='../src/extension'){
   commands:{registerCommand:(name,fn)=>{commands[name]=fn;return disposable();},executeCommand:async()=>{}},
   Uri:{joinPath:(_, ...parts)=>parts.join('/')},Range,Selection:Range,Diagnostic,DiagnosticSeverity:{Information:2,Hint:3},StatusBarAlignment:{Right:2},TextEditorRevealType:{InCenterIfOutsideViewport:0}
  };
- const context={subscriptions:[],extensionUri:'root',workspaceState:{get:(k,f)=>values.get(k)??f,update:async(k,v)=>values.set(k,v)}};
+ const globalValues=new Map(language?[['language',language]]:[]);
+ const globalState={get:(k,f)=>globalValues.get(k)??f,update:async(k,v)=>globalValues.set(k,v)};
+ const context={globalState,extension:{packageJSON:require('../package.json')},subscriptions:[],extensionUri:'root',workspaceState:{get:(k,f)=>values.get(k)??f,update:async(k,v)=>values.set(k,v)}};
  const old=Module._load;Module._load=function(name,...args){return name==='vscode'?mock:old.call(this,name,...args);};
  const filename=require.resolve(entry);delete require.cache[filename];
  try{require(filename).activate(context);}finally{Module._load=old;}

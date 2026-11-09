@@ -7352,6 +7352,510 @@ var require_acorn_loose = __commonJS({
   }
 });
 
+// src/messages.en.json
+var require_messages_en = __commonJS({
+  "src/messages.en.json"(exports2, module2) {
+    module2.exports = {
+      "Controleer of er een letter ontbreekt.": "Check whether a letter is missing.",
+      "Deze naam lijkt op een bekend begrip dat iets langer is. Lees elk woorddeel afzonderlijk en vergelijk het aantal en de volgorde van de letters.": "This name resembles a slightly longer known term. Read each part separately and compare the number and order of the letters.",
+      "Controleer of er een extra letter staat.": "Check whether there is an extra letter.",
+      "Deze naam lijkt op een bekend begrip dat iets korter is. Loop de letters \xE9\xE9n voor \xE9\xE9n na.": "This name resembles a slightly shorter known term. Check the letters one by one.",
+      "Controleer of een letter onbedoeld herhaald is.": "Check whether a letter was repeated by accident.",
+      "Mogelijk staat een letter hier dubbel. Dubbele letters kunnen ook correct zijn: vergelijk daarom met de oorspronkelijke naam.": "A letter may appear twice here. Doubled letters can be correct, so compare with the original name.",
+      "Controleer de vorm van de tekens.": "Check the shape of the characters.",
+      "Een teken lijkt mogelijk op een ander teken. Bekijk zorgvuldig of je een letter of cijfer leest, en let op de richting en vorm.": "One character may look like another. Check whether you are reading a letter or a digit, and pay attention to its shape and direction.",
+      "Controleer de volgorde van de woorddelen.": "Check the order of the parts of the name.",
+      "De naam lijkt bekende woorddelen te bevatten, maar mogelijk in een andere volgorde. Lees de betekenis van de volledige naam.": "The name appears to contain familiar parts, possibly in a different order. Read the whole name for meaning.",
+      "Controleer hoe de woorddelen verbonden zijn.": "Check how the parts of the name are joined.",
+      "Deze naam lijkt op een bekend begrip, maar de scheiding tussen woorddelen is anders. Controleer of deze taal camelCase, een koppelteken of een andere vaste schrijfwijze gebruikt.": "This name resembles a known term, but the boundaries between words differ. Check whether this language uses camelCase, hyphens, or another convention.",
+      "Controleer de hoofdletters.": "Check the capitalization.",
+      "In JavaScript telt het verschil tussen een hoofdletter en een kleine letter. Bekijk de naam letter voor letter.": "JavaScript distinguishes uppercase from lowercase. Read the name letter by letter.",
+      "Controleer de lettervolgorde.": "Check the order of the letters.",
+      "Mogelijk staan twee letters omgekeerd. Lees de naam rustig van links naar rechts.": "Two letters may have swapped places. Read the name slowly from left to right.",
+      "Controleer de letters in deze naam.": "Check the letters in this name.",
+      "Mogelijk ontbreekt een letter, staat er een extra letter of is een letter anders. Vergelijk met je cursus.": "A letter may be missing, extra, or different. Compare the name with your course materials.",
+      "Controleer of je dezelfde naam gebruikt.": "Check whether you are using the same name.",
+      "Vergelijk deze naam met de plaats waar je de variabele of functie hebt aangemaakt. Ook hoofdletters tellen mee.": "Compare this name with the place where you declared the variable or function. Capitalization matters too.",
+      "Naamconventies \xB7 camelCase en kebab-case": "Naming conventions \xB7 camelCase and kebab-case",
+      "Een naamconventie is een afspraak die de woorden in een naam herkenbaar maakt.": "A naming convention helps readers recognize the words in a name.",
+      "Welke afspraak hoort bij de taal en het soort naam dat je hier gebruikt?": "Which convention fits this language and the kind of name you are using?",
+      "JavaScript gebruikt vaak camelCase voor variabelen en methoden; CSS-eigenschappen meestal kebab-case. Bestaande API-namen staan vast. Een eigen naam moet vooral duidelijk en consequent zijn.": "JavaScript often uses camelCase for variables and methods. CSS properties usually use kebab-case. Existing API names have fixed spellings. Choose clear, consistent names for your own code.",
+      "Callbacks \xB7 een functie doorgeven": "Callbacks \xB7 passing a function",
+      "Een callback is een functie die je meegeeft zodat andere code haar kan aanroepen.": "A callback is a function you pass to other code so it can call it.",
+      "Geef je een functie mee, of het resultaat van een functie die je nu al uitvoert?": "Are you passing a function or the result of calling it now?",
+      "Bij een eventhandler gebeurt de aanroep doorgaans later. Bij een bewerking op een array kan de callback per item worden aangeroepen. Let op welke gegevens de callback ontvangt en welk resultaat nodig is.": "An event handler usually runs later. An array operation may call a callback for each item. Check what data the callback receives and what result it needs to provide.",
+      "E\xE9n element of een verzameling": "One element or a collection",
+      "Een verzameling bevat meerdere items, ook wanneer er toevallig maar \xE9\xE9n gevonden wordt.": "A collection can hold multiple items, even when a search happens to find just one.",
+      "Wil je \xE9\xE9n element aanpassen of dezelfde bewerking uitvoeren voor meerdere elementen?": "Do you want to change one element or do the same thing to several elements?",
+      "Een DOM-element en een NodeList hebben andere eigenschappen. Een NodeList is ook niet precies hetzelfde als een array. Bepaal eerst met welk soort resultaat je werkt.": "A DOM element and a NodeList have different properties. A NodeList also differs from an array. First identify the kind of result you are working with.",
+      "Vergelijken \xB7 waarde en type": "Comparisons \xB7 value and type",
+      "Een vergelijking onderzoekt of twee waarden aan een relatie voldoen.": "A comparison checks how two values relate to each other.",
+      "Welke types vergelijk je, en wil je dat een type automatisch wordt omgezet?": "What types are you comparing? Should either type be converted automatically?",
+      "Sommige vergelijkingsoperatoren kunnen typeconversie toepassen. Bij een strikte vergelijking blijven de types van belang. Denk aan het verschil tussen een getal en tekst die op een getal lijkt.": "Some comparison operators can convert types. Strict comparisons take types into account. Think about the difference between a number and text that looks like a number.",
+      "Template literals \xB7 tekst met gegevens": "Template literals \xB7 combining text and data",
+      "Een template literal kan tekst combineren met de resultaten van expressies.": "A template literal can combine text with the results of expressions.",
+      "Welke stukken zijn vaste tekst en welke stukken worden berekend?": "Which parts are fixed text and which parts are calculated?",
+      "Backticks begrenzen een template. Een interpolatie voegt een expressie in de tekst in. Aanhalingstekens en backticks hebben niet dezelfde mogelijkheden.": "Backticks mark the boundaries of a template literal. Interpolation inserts the result of an expression into the text. Quotes and backticks support different features.",
+      "Destructuring \xB7 gegevens uitpakken": "Destructuring \xB7 unpacking data",
+      "Destructuring haalt onderdelen van een array of object op via een patroon.": "Destructuring uses a pattern to extract parts of an array or object.",
+      "Werk je hier op basis van posities of op basis van eigenschapsnamen?": "Are you working with positions or property names?",
+      "Een arraypatroon volgt posities; een objectpatroon verwijst naar sleutels. Let op ontbrekende waarden, eventuele standaardwaarden en nieuwe namen binnen het bereik.": "Array patterns follow positions. Object patterns refer to keys. Pay attention to missing values, defaults, and any new names introduced into the scope.",
+      "Selectors \xB7 kiezen wat je vormgeeft": "Selectors \xB7 choosing what to style",
+      "Een selector beschrijft welke HTML-elementen een CSS-regel selecteert.": "A selector describes which HTML elements a CSS rule selects.",
+      "Selecteer je een soort element, een class, een id of een relatie tussen elementen?": "Are you selecting an element type, a class, an ID, or a relationship between elements?",
+      "Een class kan door meerdere elementen gedeeld worden; een id hoort binnen het document uniek te zijn. Spaties en andere combinatoren drukken relaties uit en veranderen welke elementen geselecteerd worden.": "Multiple elements can share a class. An ID should be unique within the document. Spaces and other combinators express relationships and affect which elements match.",
+      "Boxmodel \xB7 inhoud, ruimte en rand": "Box model \xB7 content, spacing, and borders",
+      "Een element heeft een inhoudsgebied, padding, een border en ruimte tot andere elementen.": "An element has a content area, padding, a border, and space between it and other elements.",
+      "Welke ruimte zit binnen de rand en welke erbuiten? Wat betekent de ingestelde breedte hier?": "Which spacing is inside the border and which is outside? What does the specified width mean here?",
+      "Box-sizing bepaalt hoe breedte en hoogte worden berekend. Let op de invloed van padding en borders; de uiteindelijke afmetingen hoeven niet gelijk te zijn aan alleen de inhoudsbreedte.": "Box sizing determines how width and height are calculated. Padding and borders can affect the final size of the element.",
+      "Eenheden \xB7 afmetingen in context": "Units \xB7 measurements in context",
+      "Een eenheid geeft betekenis aan een getal, bijvoorbeeld een lengte of tijd.": "A unit gives meaning to a number, such as a length or duration.",
+      "Moet deze maat vast zijn of meeschalen met tekst, ouder of venster?": "Should this measurement stay fixed or scale with the text, parent element, or viewport?",
+      "Relatieve en absolute eenheden reageren verschillend op hun omgeving. Controleer welke eenheid geldig is voor de eigenschap en wat er gebeurt bij inzoomen of een ander scherm.": "Relative and absolute units respond differently to their surroundings. Check which units the property accepts and what happens when you zoom or change the screen size.",
+      "Semantische HTML \xB7 betekenis van een element": "Semantic HTML \xB7 the meaning of an element",
+      "Semantische HTML beschrijft de rol van inhoud, zoals een hoofdtitel, navigatie of knop.": "Semantic HTML describes the role of content, such as a heading, navigation, or button.",
+      "Past de gekozen tag bij wat de inhoud doet, ook zonder vormgeving?": "Does the chosen tag match what the content does when you take away the styling?",
+      "Betekenis helpt browsers, hulpmiddelen en andere ontwikkelaars de pagina te begrijpen. Kies een element op basis van zijn rol; de vormgeving kun je met CSS bepalen.": "Meaning helps browsers, assistive tools, and other developers understand the page. Choose an element based on its role and use CSS to style it.",
+      "Toegankelijkheid \xB7 informatie voor iedereen": "Accessibility \xB7 information for everyone",
+      "Toegankelijke HTML maakt betekenis en bediening bruikbaar met verschillende hulpmiddelen.": "Accessible HTML makes content and controls usable with different assistive tools.",
+      "Is de functie of informatie ook duidelijk zonder de afbeelding of zonder een muis?": "Is the information or function clear without the image or without a mouse?",
+      "Denk aan tekstalternatieven, herkenbare labels, toetsenbordbediening en een logische structuur. De juiste tekst hangt af van het doel en de context; een decoratieve afbeelding kan een leeg tekstalternatief hebben.": "Consider text alternatives, recognizable labels, keyboard controls, and logical structure. The right text depends on purpose and context. A decorative image can use an empty text alternative.",
+      "Opmaak \xB7 structuur en vormgeving scheiden": "Styling \xB7 separating structure and appearance",
+      "Een gedeelde class bundelt opmaak voor elementen met dezelfde rol.": "A shared class groups styles for elements that serve the same role.",
+      "Kan deze directe opmaak naar een gedeelde CSS-class? Welke keuzes horen in CSS-variabelen?": "Could this direct styling move to a shared CSS class? Which choices belong in CSS variables?",
+      "Een designsysteem bundelt afspraken over kleuren, typografie, afstanden en componenten. Inline opmaak en JavaScript-stijlen kunnen nuttig zijn voor dynamische waarden, maar verspreide vaste opmaak is moeilijker samen te wijzigen.": "A design system captures decisions about colors, typography, spacing, and components. Inline and JavaScript styles can help with dynamic values. Fixed styles scattered across the code are harder to update together.",
+      "Functies \xB7 \xE9\xE9n duidelijke taak": "Functions \xB7 one clear task",
+      "Een functie bundelt stappen. Parameters zijn namen waarmee een functie gegevens ontvangt.": "A function groups steps. Parameters are the names through which a function receives data.",
+      "Kun je de taak van deze functie in \xE9\xE9n zin beschrijven? Welke gegevens heeft ze nodig?": "Can you describe the function's task in one sentence? What data does it need?",
+      "Bij een aanroep geef je argumenten mee: de concrete gegevens. Een return geeft een resultaat terug aan de aanroeper. Een functie hoeft niet altijd een resultaat terug te geven.": "Arguments are the actual values you pass when you call a function. A return statement passes a result back to the caller. Returning a result is optional.",
+      "Arrays \xB7 een lijst gegevens": "Arrays \xB7 a list of values",
+      "Een array bewaart een geordende lijst. De positie van een item heet de index.": "An array stores an ordered list. An item's position is its index.",
+      "Wat stelt \xE9\xE9n item in deze lijst voor? Is de volgorde van belang?": "What does one item in this list represent? Does the order matter?",
+      "De eerste index is nul. Maak onderscheid tussen het aantal items en de index van het laatste item. Kies een bewerking op basis van wat je met de lijst wilt doen.": "The first index is zero. The item count differs from the index of the last item. Choose an operation based on what you want to do with the list.",
+      "Objecten \xB7 gegevens groeperen": "Objects \xB7 grouping data",
+      "Een object groepeert eigenschappen: elke eigenschap heeft een sleutel en een waarde.": "An object groups properties, each with a key and a value.",
+      "Welke eigenschappen horen samen bij \xE9\xE9n ding? Hebben je namen een duidelijke betekenis?": "Which properties describe the same thing? Do your names clearly convey their meaning?",
+      "Een object beschrijft vaak \xE9\xE9n entiteit, zoals een leerling of product. Een array van objecten kan meerdere van zulke entiteiten bewaren.": "An object often describes one entity, such as a student or product. An array of objects can store several such entities.",
+      "Voorwaarden \xB7 een keuze maken": "Conditions \xB7 making a choice",
+      "Een voorwaarde bepaalt of een tak van je code wordt uitgevoerd.": "A condition determines whether a branch of code runs.",
+      "Wat gebeurt er als de voorwaarde waar is? En als ze onwaar is?": "What happens when the condition is true? What happens when it is false?",
+      "Controleer ook grensgevallen, zoals nul, een lege invoer en een waarde precies op de grens. Meerdere voorwaarden kun je logisch combineren.": "Check boundary cases such as zero, empty input, and a value right at the threshold. You can combine conditions with logical operators.",
+      "Lussen \xB7 stappen herhalen": "Loops \xB7 repeating steps",
+      "Een lus voert stappen meermaals uit.": "A loop runs steps repeatedly.",
+      "Wat verandert na elke herhaling? Waardoor stopt de lus?": "What changes after each iteration? What makes the loop stop?",
+      "Denk aan start, herhaling en stop. Bij het doorlopen van een verzameling helpt het om eerst te verwoorden wat er per item moet gebeuren.": "Think about where the loop starts, what repeats, and when it stops. When looping over a collection, describe what should happen to each item.",
+      "DOM \xB7 de pagina als boom": "DOM \xB7 the page as a tree",
+      "Het DOM is de boomstructuur waarmee JavaScript HTML-elementen kan vinden en aanpassen.": "The DOM is the tree structure JavaScript uses to find and change HTML elements.",
+      "Zoek je \xE9\xE9n element of meerdere? Wat gebeurt er wanneer je niets vindt?": "Are you looking for one element or several? What happens if you find none?",
+      "Een selector beschrijft welk element je zoekt. Een gevonden element is een object waarmee je kunt werken. De pagina moet het element al bevatten op het moment van zoeken.": "A selector describes the element you want. A match is an object you can work with. The element must already exist in the page when you search.",
+      "JSON \xB7 gegevens uitwisselen": "JSON \xB7 exchanging data",
+      "JSON is een tekstformaat voor gegevens, zoals objecten en lijsten.": "JSON is a text format for data such as objects and lists.",
+      "Werk je hier met tekst of al met een JavaScript-waarde?": "Are you working with text or with a JavaScript value?",
+      "Omzetten tussen tekst en gegevens is een afzonderlijke stap. JSON-tekst heeft strikte schrijfregels. Niet elke geldige JavaScript-waarde kan rechtstreeks in JSON worden bewaard.": "Converting between text and data is a separate step. JSON follows strict syntax rules and supports only some JavaScript values directly.",
+      "Asynchroon \xB7 wachten op een resultaat": "Asynchronous code \xB7 waiting for a result",
+      "Een Promise vertegenwoordigt een resultaat dat later beschikbaar kan worden. Asynchrone code kan daarop wachten.": "A Promise represents a result that may become available later. Asynchronous code can wait for it.",
+      "Welke stap heeft het resultaat nodig? Wat doe je wanneer de bewerking mislukt?": "Which step needs the result? What will you do if the operation fails?",
+      "Netwerkverzoeken kunnen tijd kosten of mislukken. Houd rekening met laden, succes en fouten. Een antwoord van een server is niet automatisch een geslaagde bewerking.": "Network requests can take time or fail. Account for loading, success, and errors. Check whether the server response indicates success.",
+      "Scope \xB7 waar een naam geldt": "Scope \xB7 where a name is available",
+      "Scope is het deel van je programma waarin een naam toegankelijk is.": "Scope is the part of your program where you can access a name.",
+      "Waar heb je deze variabele nodig? Kan ze dichter bij die plaats worden aangemaakt?": "Where do you need this variable? Could you declare it closer to where you use it?",
+      "Functies en blokken kunnen eigen bereiken vormen. Een plaatselijke naam hoeft buiten dat bereik niet beschikbaar te zijn. Beperk gedeelde toestand waar dat kan.": "Functions and blocks can have their own scopes. Keep local names within the scope that needs them and limit shared state where possible.",
+      "Layout \xB7 Flexbox en Grid": "Layout \xB7 Flexbox and Grid",
+      "Flexbox organiseert meestal langs \xE9\xE9n hoofdrichting. Grid verdeelt ruimte in rijen en kolommen.": "Flexbox usually arranges items along one main axis. Grid divides space into rows and columns.",
+      "Organiseer je een rij of kolom, of een raster? Wat gebeurt er op een smaller scherm?": "Are you arranging a row or column, or a grid? What happens on a narrower screen?",
+      "Kies de indeling op basis van de inhoud. Denk aan ruimte tussen onderdelen, uitlijning en het gedrag wanneer inhoud niet meer past.": "Choose a layout based on the content. Consider spacing, alignment, and what happens when the content no longer fits.",
+      "Cascade en overerving \xB7 welke stijl geldt?": "Cascade and inheritance \xB7 which style applies?",
+      "De cascade bepaalt welke CSS-regel voorrang krijgt. Sommige eigenschappen erven hun waarde van een ouder.": "The cascade determines which CSS rule takes precedence. Some properties inherit their value from a parent.",
+      "Welke regels be\xEFnvloeden dit element? Kun je de gekozen waarde in de browserinspecteur verklaren?": "Which rules affect this element? Can you explain the resulting value in the browser inspector?",
+      "Onder meer oorsprong, belangrijkheid, lagen, specificiteit en volgorde spelen mee. Meer specificiteit of belangrijkheid toevoegen is niet altijd de beste oplossing.": "Origin, importance, layers, specificity, and order all matter. Check those factors before increasing specificity or adding importance.",
+      "ES6 \xB7 bereik van variabelen": "ES6 \xB7 variable scope",
+      "Bereik (scope) betekent: waar in je code een variabele bruikbaar is.": "Scope determines where in your code a variable is available.",
+      "Moet deze variabele alleen binnen dit blok bestaan? Kan haar waarde later veranderen?": "Should this variable exist only inside this block? Can its value change later?",
+      "ES6 voegde declaraties met blokbereik toe. Kies bewust op basis van bereik en veranderlijkheid; een oudere declaratie is niet automatisch fout.": "ES6 added block-scoped declarations. Choose a declaration based on scope and whether the value can change.",
+      "DRY \xB7 herhaling onderzoeken": "DRY \xB7 examining repetition",
+      "DRY betekent: dezelfde kennis op \xE9\xE9n plaats bewaren.": "DRY means keeping each piece of knowledge in one place.",
+      "Als je dit later wijzigt, moet je dan ook andere plaatsen aanpassen?": "If you change this later, will you need to update other places too?",
+      "Vergelijk de bedoeling van de herhaling. Een functie, gedeelde stijl of variabele kan helpen. Toevallig gelijke code hoeft niet altijd samen.": "Compare what the repeated code does. A function, shared style, or variable may help when repeated code serves the same purpose.",
+      "Designsysteem \xB7 vaste ontwerpkeuzes": "Design system \xB7 shared design decisions",
+      "Een ontwerptoken is een naam voor een vaste keuze, zoals een kleur of afstand.": "A design token names a design decision such as a color or spacing value.",
+      "Hebben deze herhaalde waarden dezelfde betekenis in je ontwerp?": "Do these repeated values have the same meaning in your design?",
+      "Met CSS-variabelen kun je gedeelde keuzes centraal beheren. Gelijke waarden kunnen ook verschillende bedoelingen hebben.": "CSS variables let you manage shared decisions in one place. Identical values can serve different purposes.",
+      "BEM \xB7 namen met een rol": "BEM \xB7 names with a role",
+      "BEM onderscheidt een zelfstandig blok, een onderdeel van dat blok en een variant.": "BEM distinguishes a standalone block, an element within it, and a modifier.",
+      "Kun je aan je classnamen zien wat bij elkaar hoort en wat een variant is?": "Can you tell from your class names what belongs together and what is a variant?",
+      "Een vaste naamafspraak maakt CSS beter leesbaar. BEM is \xE9\xE9n mogelijke afspraak, geen verplichte standaard.": "A consistent naming convention makes CSS easier to read. BEM is one convention you can choose.",
+      "Componenten \xB7 herbruikbare onderdelen": "Components \xB7 reusable parts",
+      "Een component is een afgebakend onderdeel met een duidelijke taak.": "A component is a self-contained part with a clear responsibility.",
+      "Komen hier onderdelen terug met dezelfde structuur en bedoeling?": "Do any parts here repeat the same structure and purpose?",
+      "Bekijk of je ze samen kunt beheren. Een component heeft een duidelijke grens en kan gegevens ontvangen. Veel elementen alleen bewijzen niet dat een component nodig is.": "Consider whether you could manage those parts together. A component has a clear boundary and can receive data. Look for a shared responsibility when deciding what to group.",
+      "Gestalt \xB7 visuele samenhang": "Gestalt \xB7 visual grouping",
+      "Mensen zien vormen en groepen: nabijheid en gelijkenis helpen om samenhang te herkennen.": "People see patterns and groups. Proximity and similarity help them recognize what belongs together.",
+      "Open de pagina. Staan dingen die bij elkaar horen dicht bij elkaar? Zien elementen met dezelfde functie er vergelijkbaar uit?": "Open the page. Are related items close together? Do elements with the same function look similar?",
+      "Dit is een kijkvraag. De extensie ziet geen gerenderde pagina en beoordeelt geen visuele kwaliteit.": "Inspect the rendered page yourself to see how its parts fit together.",
+      "Events \xB7 reageren op een actie": "Events \xB7 responding to an action",
+      "Een event is een gebeurtenis, bijvoorbeeld een klik. Een handler is code die erop reageert.": "An event is something that happens, such as a click. A handler is code that responds to it.",
+      "Kun je benoemen welke actie je volgt en welke taak de handler uitvoert?": "Can you name the action you are listening for and describe what the handler does?",
+      "Denk aan het onderscheid tussen een functie doorgeven en een functie meteen uitvoeren. Houd de taak van een handler overzichtelijk.": "Consider when to pass a function and when to call it immediately. Keep the handler focused on a clear task.",
+      "Lees de gemarkeerde naam langzaam.": "Read the highlighted name slowly.",
+      "Vergelijk de naam met je cursus of de oorspronkelijke declaratie.": "Compare the name with your course materials or the original declaration.",
+      "CSS-eigenschap": "CSS property",
+      "Meerdelige standaard CSS-eigenschappen gebruiken doorgaans kleine letters met koppeltekens: kebab-case. Een spatie kan de naam opsplitsen; camelCase hoort vaak bij de JavaScript-weergave van zo\u2019n eigenschap.": "Standard CSS properties made up of multiple words usually use lowercase letters with hyphens. This is called kebab-case. A space can split the name. The JavaScript equivalent often uses camelCase.",
+      "Verdeel de bedoelde eigenschap in woorden.": "Break the intended property name into words.",
+      "Controleer hoe de woorden in CSS verbonden zijn.": "Check how CSS joins those words.",
+      "Vergelijk de volledige eigenschapsnaam met je cursus.": "Compare the full property name with your course materials.",
+      "JavaScript is hoofdlettergevoelig. Veel browsermethoden en eigenschappen gebruiken camelCase: het eerste woord begint klein en een volgend woord begint met een hoofdletter. Bestaande API-namen hebben een vaste schrijfwijze; je kunt die niet zelf kiezen.": "JavaScript is case-sensitive. Many browser methods and properties use camelCase. The first word starts with a lowercase letter and later words start with uppercase letters. Existing API names have fixed spellings.",
+      "De letters lijken op een bekend JavaScript-begrip, maar de hoofdletters komen niet overeen.": "The letters resemble a known JavaScript term, but the capitalization differs.",
+      "Verdeel de naam in betekenisvolle woorden.": "Break the name into meaningful words.",
+      "Controleer de overgang tussen die woorden (camelCase).": "Check the transitions between words in camelCase.",
+      "Vergelijk daarna de volledige schrijfwijze met je cursus.": "Compare the full spelling with your course materials.",
+      "Deze naam lijkt op een bekend begrip, met mogelijk twee letters in een andere volgorde.": "This name resembles a known term, possibly with two letters in a different order.",
+      "Lees de naam in kleine stukken en wijs de letters \xE9\xE9n voor \xE9\xE9n aan. Controleer vooral de volgorde binnen elk stuk. De tool toont bewust geen vervangende naam.": "Read the name in small sections and point to each letter. Check the order within each section.",
+      "Deze naam lijkt op een declaratie die binnen dit bereik bestaat.": "This name resembles a declaration in the current scope.",
+      " Bij eigen namen kan camelCase de woordgrenzen zichtbaar maken. Gebruik op alle plaatsen exact de schrijfwijze van je declaratie.": " For your own names, camelCase can make word boundaries clearer. Use the exact spelling from the declaration everywhere.",
+      " Een CSS-eigenschap benoemt wat je vormgeeft. Meerdelige standaardnamen gebruiken meestal kleine letters met koppeltekens (kebab-case).": " A CSS property names what you are styling. Standard names made up of multiple words usually use lowercase letters with hyphens (kebab-case).",
+      "HTML-attribuut": "HTML attribute",
+      " Het attribuut is de naam v\xF3\xF3r een eventuele koppeling met een waarde; controleer de waarde afzonderlijk.": " The attribute is the name before any associated value. Check the value separately.",
+      " Browsergebeurtenissen hebben vaste namen. Zelfgemaakte events kunnen een andere, bewust gekozen naam hebben.": " Browser event names have fixed spellings. Custom events can use names you choose.",
+      "Bij deze naam speelt de schrijfwijze van samengestelde woorden mee.": "This name contains several words whose spelling and capitalization matter.",
+      "Inspringing \xB7 leesbaarheid": "Indentation \xB7 readability",
+      "Controleer of je tabs en spaties bewust combineert.": "Check whether you meant to combine tabs and spaces.",
+      "Er zijn verschillende vormen van inspringing gevonden. Dit is op zichzelf geen syntaxfout in deze taal.": "The file uses different forms of indentation. The language allows them here.",
+      "Inspringing maakt de structuur zichtbaar. Een tab kan in een andere editor anders breed zijn. Kies een consequente aanpak; tabs voor blokken en spaties voor uitlijning kunnen ook een bewuste afspraak zijn. In deze weergave staat \xB7 voor een spatie en \u21E5 voor een tab.": "Indentation makes the structure visible. Tab width can differ between editors. Follow a consistent approach. Some projects use tabs for nesting and spaces for alignment. Here, \xB7 represents a space and \u21E5 represents a tab.",
+      "Zet witruimteweergave aan in je editor.": "Turn on whitespace rendering in your editor.",
+      "Bekijk welke regels op hetzelfde niveau horen.": "Check which lines belong at the same level.",
+      "Volg de afgesproken inspringstijl van je project.": "Follow your project's indentation style.",
+      "JavaScript \xB7 spatie in een naam": "JavaScript \xB7 space in a name",
+      "Hoort deze naam als \xE9\xE9n geheel bij elkaar?": "Should these parts form a single name?",
+      "Een spatie kan een JavaScript-naam in twee losse tokens verdelen. Samengestelde API-namen gebruiken vaak camelCase om woordgrenzen binnen \xE9\xE9n naam zichtbaar te maken.": "A space can split a JavaScript name into two tokens. API names with multiple words often use camelCase to show word boundaries within one name.",
+      "Lees beide delen samen.": "Read the two parts together.",
+      "Controleer of je \xE9\xE9n methode bedoelt.": "Check whether you mean a single method.",
+      "Bekijk hoe woordgrenzen in die vaste naam worden geschreven.": "Look at how the API name marks the boundary between words.",
+      "Naam in dit bereik": "Name in this scope",
+      "Welke waarde wil je hier toekennen?": "What value do you want to assign here?",
+      "Na deze toekenning ontbreekt een leesbare expressie.": "The assignment is missing a readable expression.",
+      "Een toekenning verbindt een doel links met een waarde of berekening rechts. De puntkomma rondt een instructie af, maar levert zelf geen waarde.": "An assignment connects a target on the left to a value or calculation on the right. A semicolon ends a statement. The assignment still needs a value.",
+      "Benoem wat links wordt aangepast.": "Identify what changes on the left.",
+      "Benoem wat rechts het resultaat moet leveren.": "Identify what should produce the result on the right.",
+      "Controleer of die expressie volledig is.": "Check whether the expression is complete.",
+      "JavaScript \xB7 toegang tot een eigenschap": "JavaScript \xB7 property access",
+      "Is deze instructie hier al afgelopen?": "Is this statement meant to end here?",
+      "Na het gevonden DOM-element staat een losse eigenschapsnaam die hier niet als variabele is gedeclareerd.": "A property name appears on its own after the DOM element. No variable with that name is declared here.",
+      "Een puntkomma (;) be\xEBindigt een instructie. Een punt (.) verbindt een object met een eigenschap of methode. Na de puntkomma wordt de volgende naam zelfstandig gelezen.": "A semicolon (;) ends a statement. A dot (.) connects an object to a property or method. After a semicolon, JavaScript reads the next name on its own.",
+      "Bepaal bij welk object de volgende eigenschap hoort.": "Identify the object that owns the next property.",
+      "Lees het leesteken tussen object en eigenschap.": "Read the punctuation between the object and the property.",
+      "Vraag je af of je verdergaat op hetzelfde object of een nieuwe instructie begint.": "Decide whether you are continuing with the same object or starting a new statement.",
+      "Er staat een functie in je code.": "Your code contains a function.",
+      "Er staat een herhalingsstructuur in je code.": "Your code contains a loop.",
+      "Er staat een template literal in je code.": "Your code contains a template literal.",
+      "Er wordt een object uitgepakt via een patroon.": "A pattern unpacks an object.",
+      "Er wordt een array uitgepakt via een patroon.": "A pattern unpacks an array.",
+      "Er worden waarden op gelijkheid of ongelijkheid vergeleken.": "Values are compared for equality or inequality.",
+      "Er wordt een array aangemaakt.": "An array is created.",
+      "Er wordt een object aangemaakt.": "An object is created.",
+      "Er staat een if-voorwaarde in je code.": "Your code contains an if condition.",
+      "JavaScript \xB7 bedoeling controleren": "JavaScript \xB7 checking intent",
+      "Wil je hier toekennen of vergelijken?": "Do you want to assign or compare here?",
+      "Deze voorwaarde bevat een toekenning. Dat is geldig, maar kan iets anders doen dan je bedoelt.": "This condition contains a valid assignment. Check whether changing the value is what you intended.",
+      "Toekennen verandert een waarde. Vergelijken onderzoekt een relatie tussen waarden. Een if beslist op basis van het resultaat van zijn voorwaarde.": "An assignment changes a value. A comparison checks a relationship between values. An if statement uses the result of its condition to decide what runs.",
+      "Verwoord de voorwaarde in gewone taal.": "State the condition in plain language.",
+      "Bepaal of je gegevens wilt veranderen of vergelijken.": "Decide whether you want to change or compare values.",
+      "Controleer of de gekozen operator die bedoeling uitdrukt.": "Check whether the operator expresses that intent.",
+      "Er staat een voorwaardelijke expressie in je code.": "Your code contains a conditional expression.",
+      "Deze code wacht op een asynchroon resultaat.": "This code waits for an asynchronous result.",
+      "Er wordt een netwerkverzoek gestart.": "This code starts a network request.",
+      "Je werkt met een verzameling DOM-elementen.": "You are working with a collection of DOM elements.",
+      "Deze bewerking ontvangt doorgaans een callback.": "This operation usually receives a callback.",
+      "Een eventlistener ontvangt een handler.": "An event listener receives a handler.",
+      "JavaScript \xB7 callback controleren": "JavaScript \xB7 checking a callback",
+      "Wil je deze functie nu uitvoeren of later laten uitvoeren?": "Should this function run now or later?",
+      "Hier wordt een functie aangeroepen terwijl de eventlistener wordt ingesteld.": "The function is called while the event listener is being set up.",
+      "Een eventlistener verwacht een handler voor het moment van de gebeurtenis. Een aanroep voert de functie meteen uit en geeft haar resultaat door. Dat kan bewust zijn als het resultaat zelf weer een handler is.": "An event listener needs a handler to run when the event occurs. Calling a function now passes its result to the listener. That can be intentional if the result is itself a handler.",
+      "Bepaal wanneer de functie moet lopen.": "Decide when the function should run.",
+      "Controleer of je een functie of het resultaat van een aanroep doorgeeft.": "Check whether you are passing a function or the result of calling it.",
+      "Er wordt tussen JSON-tekst en gegevens omgezet.": "This code converts between JSON text and data.",
+      "Je zoekt of maakt een DOM-element.": "You are finding or creating a DOM element.",
+      "JavaScript kent een style-attribuut toe.": "JavaScript sets a style attribute.",
+      "JavaScript stelt rechtstreeks een CSS-eigenschap in.": "JavaScript sets a CSS property directly.",
+      "JavaScript kent rechtstreeks opmaak toe.": "JavaScript applies styling directly.",
+      "Een verzameling wordt benaderd alsof ze \xE9\xE9n element is.": "This code treats a collection as a single element.",
+      "JavaScript \xB7 verzameling": "JavaScript \xB7 collection",
+      "Werk je hier met \xE9\xE9n element of met meerdere?": "Are you working with one element or several?",
+      "Het object is hier een NodeList; deze eigenschap hoort normaal bij een afzonderlijk element.": "The object is a NodeList. This property usually belongs to an individual element.",
+      "Een verzameling en haar items zijn verschillende objecten. Eerst moet duidelijk zijn op welk item, of op welke items, je een bewerking wilt uitvoeren.": "A collection and its items are separate objects. Decide which item or items you want to operate on.",
+      "Bekijk wat de selectie teruggeeft.": "Check what the selection returns.",
+      "Bepaal of je \xE9\xE9n of meerdere elementen bedoelt.": "Decide whether you mean one element or several.",
+      "Controleer op welk object de eigenschap wordt gebruikt.": "Check which object you are accessing the property on.",
+      "Er wordt een eventlistener gebruikt.": "This code uses an event listener.",
+      "Er wordt een variabele met blokbereik gedeclareerd.": "This code declares a block-scoped variable.",
+      "Er staat een declaratie met var.": "This code contains a var declaration.",
+      "Een blok met minstens drie instructies komt letterlijk terug.": "A block of at least three statements appears more than once with the same text.",
+      "JavaScript \xB7 bij elkaar horende tekens": "JavaScript \xB7 matching characters",
+      "Controleer of dit sluitteken bij het openingsteken past.": "Check whether this closing character matches the opening one.",
+      "Controleer of dit openingsteken nog wordt afgesloten.": "Check whether this opening character has a matching closing character.",
+      "Ronde haakjes groeperen bijvoorbeeld argumenten of voorwaarden. Vierkante haakjes komen voor bij lijsten en toegang tot items. Accolades bakenen onder meer blokken en objecten af. Elk openingsteken moet het passende sluitteken krijgen, in de juiste volgorde.": "Parentheses can group arguments or conditions. Square brackets appear in lists and item access. Braces mark the boundaries of blocks and objects. Match each opening character with the correct closing character in the right order.",
+      "Zoek het bijbehorende teken.": "Find the matching character.",
+      "Controleer het soort haakje.": "Check which type of bracket is used.",
+      "Werk van het binnenste paar naar buiten.": "Work outward from the innermost pair.",
+      "Controleer de structuur rond deze plaats.": "Check the structure around this location.",
+      "De JavaScript-parser kan deze instructie niet volledig lezen. Het probleem kan ook vlak v\xF3\xF3r de markering staan. Controleer de opbouw en bij elkaar horende tekens.": "The JavaScript parser cannot read the whole statement. The problem may be just before the highlighted location. Check the structure and matching characters.",
+      "Controleer de afsluiting van deze tekst.": "Check how this text ends.",
+      "Een string of template heeft een begin- en eindteken. Controleer of hetzelfde soort aanhalingsteken wordt gebruikt en of een nieuwe regel is toegestaan.": "A string or template has opening and closing delimiters. Check that the delimiters match and that the string allows a line break.",
+      "Controleer de afsluiting van dit commentaar.": "Check how this comment ends.",
+      "Een blokcommentaar blijft doorlopen tot de eindmarkering. Controleer of de volgende code buiten het commentaar hoort te staan.": "A block comment continues until its closing marker. Check whether the code that follows should be outside the comment.",
+      "Controleer of deze naam hier al gedeclareerd is.": "Check whether this name is already declared here.",
+      "Sommige declaraties mogen dezelfde naam niet opnieuw invoeren in hetzelfde bereik. Vergelijk de declaraties en hun blokken.": "Some declarations require a unique name within their scope. Compare the declarations and the blocks they appear in.",
+      "Bekijk ook de instructie v\xF3\xF3r de markering.": "Look at the statement just before the highlighted location.",
+      "Controleer haakjes, aanhalingstekens en leestekens.": "Check brackets, quotes, and punctuation.",
+      "Werk \xE9\xE9n onvolledige instructie af en bekijk de hints opnieuw.": "Complete one unfinished statement, then check the hints again.",
+      "CSS \xB7 schrijfafspraak (geldige code)": "CSS \xB7 naming convention (valid code)",
+      "Gebruik een consistente schrijfwijze voor CSS-eigenschappen.": "Use a consistent spelling convention for CSS properties.",
+      "Deze schrijfwijze werkt in CSS. Dit is een leesbaarheidsadvies, geen syntaxfout.": "CSS accepts this spelling. This hint is about readability.",
+      "Standaard CSS-eigenschappen zijn niet hoofdlettergevoelig. De gebruikelijke afspraak is kleine letters en koppeltekens tussen woorden: kebab-case. In JavaScript gebruiken veel vergelijkbare namen camelCase. Eigen CSS-variabelen met -- zijn w\xE9l hoofdlettergevoelig.": "Standard CSS properties are case-insensitive. The usual convention is lowercase letters with hyphens between words, called kebab-case. Similar names in JavaScript often use camelCase. Custom CSS properties that start with -- are case-sensitive.",
+      "Herken of je CSS of JavaScript schrijft.": "Identify whether you are writing CSS or JavaScript.",
+      "Controleer of je naam dezelfde schrijfafspraak volgt als de rest van je stylesheet.": "Check whether the name follows the same convention as the rest of your stylesheet.",
+      "Deze regel kiest Flexbox of Grid.": "This rule selects Flexbox or Grid.",
+      "Deze declaratie gebruikt belangrijkheid of een overervings-/cascadewaarde.": "This declaration uses importance or a value related to inheritance or the cascade.",
+      "CSS-waarde": "CSS value",
+      "CSS-variabele": "CSS variable",
+      "CSS-eenheid": "CSS unit",
+      "Controleer of de eenheid volledig is.": "Check whether the unit is complete.",
+      "Een eenheid geeft aan hoe het getal wordt ge\xEFnterpreteerd. Controleer de letters van de eenheid en of die eenheid past bij de eigenschap.": "A unit tells CSS how to interpret the number. Check the letters of the unit and whether the property accepts it.",
+      "Scheid het getal van de eenheid.": "Separate the number from the unit.",
+      "Zoek in je cursus welke maat je bedoelt.": "Look up the measurement you intend to use in your course materials.",
+      "Deze declaratie bepaalt een afmeting of afstand.": "This declaration sets a size or distance.",
+      "Deze declaratie be\xEFnvloedt het boxmodel.": "This declaration affects the box model.",
+      "Een kleur of afstand wordt minstens drie keer letterlijk gebruikt.": "The same color or spacing value appears at least three times.",
+      "Dezelfde CSS-eigenschap met dezelfde waarde komt minstens drie keer voor.": "The same CSS property and value appear together at least three times.",
+      "Deze stijlregel selecteert HTML-elementen.": "This style rule selects HTML elements.",
+      "Er worden classes als selectors gebruikt.": "The selectors use classes.",
+      "Bekijk het resultaat van deze stijlen in de browser.": "View the result of these styles in a browser.",
+      "Dit HTML-element bevat directe opmaak in een style-attribuut.": "This HTML element contains inline styling in a style attribute.",
+      "Deze tag geeft de inhoud een betekenisvolle rol.": "This tag gives the content a meaningful role.",
+      "Dit element vraagt aandacht voor tekstalternatieven of bediening.": "Check this element for text alternatives or accessible controls.",
+      "HTML \xB7 toegankelijkheid": "HTML \xB7 accessibility",
+      "Welke informatie draagt deze afbeelding?": "What information does this image convey?",
+      "Bij deze afbeelding is geen alt-attribuut gevonden.": "This image has no alt attribute.",
+      "Een tekstalternatief beschrijft de relevante informatie of functie. Een decoratieve afbeelding kan een bewust leeg alternatief hebben. Een ontbrekend alternatief is iets anders dan een leeg alternatief.": "A text alternative describes the relevant information or function. A decorative image can use an intentionally empty alt attribute. Adding an empty alt attribute gives assistive tools a different signal from leaving it out.",
+      "Bepaal de functie van de afbeelding.": "Identify the purpose of the image.",
+      "Bepaal wat iemand zonder beeld moet weten.": "Decide what someone who cannot see the image needs to know.",
+      "Controleer hoe je die bedoeling in het attribuut uitdrukt.": "Check how to express that purpose in the attribute.",
+      "Hetzelfde soort HTML-element komt minstens drie keer voor; onderzoek of de bedoeling ook gelijk is.": "The same kind of HTML element appears at least three times. Check whether the instances serve the same purpose.",
+      "Open de HTML-pagina om de groepering te bekijken.": "Open the HTML page to inspect the grouping.",
+      Hoofdletters: "Capitalization",
+      Lettervolgorde: "Letter order",
+      "Volgorde van woorddelen": "Word order",
+      "Ontbrekende letter": "Missing letter",
+      "Herhaalde letter": "Repeated letter",
+      "Gelijkende tekens": "Similar-looking characters",
+      Woordgrenzen: "Word boundaries",
+      "Naam consequent overnemen": "Consistent naming",
+      "Letters vergelijken": "Letter comparison",
+      "Structuur en leestekens": "Structure and punctuation",
+      Schrijfafspraak: "Writing convention",
+      "Bedoeling controleren": "Check your intent",
+      Aandachtspunt: "Something to check",
+      "HTML-structuur": "HTML structure",
+      "Controleer het teken tussen attribuut en waarde.": "Check the character between the attribute and its value.",
+      "Een HTML-attribuut heeft een naam en eventueel een waarde. Het gelijkteken (=) koppelt die twee. De dubbele punt (:) heeft onder meer in CSS een andere rol.": "An HTML attribute has a name and can have a value. An equals sign (=) connects them. A colon (:) serves a different purpose in CSS.",
+      "Baken de attribuutnaam af.": "Identify where the attribute name starts and ends.",
+      "Zoek de waarde tussen aanhalingstekens.": "Find the quoted value.",
+      "Controleer welk teken de naam met de waarde verbindt.": "Check which character connects the name to the value.",
+      "Hier zit het aandachtspunt in het scheidingsteken, niet in de letters van de attribuutnaam.": "Focus on the separator between the attribute name and the value.",
+      "Controleer hoe deze attribuutwaarde is verbonden.": "Check how this attribute value is connected.",
+      "Een waarde tussen aanhalingstekens moet aan een attribuut gekoppeld zijn. In HTML legt = die verbinding. Een boolean attribuut, zoals disabled, kan zonder waarde voorkomen.": "A quoted value must be attached to an attribute. In HTML, = makes that connection. A Boolean attribute such as disabled can appear on its own.",
+      "Zoek de naam en de bedoelde waarde.": "Find the name and the intended value.",
+      "Bekijk de ruimte ertussen.": "Look at the space between them.",
+      "Controleer of de verbinding aanwezig is.": "Check whether they are connected.",
+      "Dit attribuut staat meer dan \xE9\xE9n keer in deze tag.": "This attribute appears more than once in this tag.",
+      "Dezelfde attribuutnaam hoort binnen \xE9\xE9n starttag maar \xE9\xE9n keer voor te komen. Anders kan de browser een waarde negeren.": "Use each attribute name once per opening tag. Otherwise the browser may ignore one of the values.",
+      "Vergelijk de attributen binnen deze ene starttag.": "Compare the attributes within this opening tag.",
+      "Bepaal welke gegevens bij elkaar horen.": "Decide which pieces of information belong together.",
+      "Controleer de aanhalingstekens rond deze waarde.": "Check the quotes around this value.",
+      "Een waarde die met een enkel of dubbel aanhalingsteken begint, moet met hetzelfde soort teken eindigen. Anders kan volgende HTML als deel van de waarde worden gelezen.": "A value that starts with a single or double quote must end with the same kind of quote. Otherwise the browser may read later HTML as part of the value.",
+      "Zoek het openingsteken.": "Find the opening character.",
+      "Zoek het bijbehorende sluitteken.": "Find the matching closing character.",
+      "Kijk of de volgende tag buiten de waarde staat.": "Check whether the next tag is outside the value.",
+      "Controleer of deze tag volledig is afgesloten.": "Check whether this tag closes completely.",
+      "Een start- of eindtag wordt begrensd door < en >. Een nieuwe regel sluit een tag niet af. Als het sluitteken ontbreekt, kan de volgende tag verkeerd worden gelezen.": "An opening or closing tag is enclosed in < and >. A line break leaves the tag open. If the closing bracket is missing, the browser may misread the next tag.",
+      "Begin bij de gemarkeerde tag.": "Start at the highlighted tag.",
+      "Volg de tag tot zijn einde.": "Follow the tag to its end.",
+      "Controleer de afsluiting v\xF3\xF3r de volgende tag begint.": "Check that it closes before the next tag starts.",
+      "Controleer de afsluiting van deze tag.": "Check how this tag closes.",
+      "Het bestand eindigt terwijl de tag nog niet volledig afgesloten lijkt. Ook een eindtag heeft een sluitend punthaakje nodig.": "The file ends while the tag still appears open. A closing tag also needs a closing angle bracket.",
+      "Controleer het einde van de tag.": "Check the end of the tag.",
+      "Controleer of een attribuutwaarde nog openstaat.": "Check whether an attribute value is still open.",
+      "Is deze id uniek binnen de pagina?": "Is this ID unique on the page?",
+      "Een id identificeert \xE9\xE9n element in een document. Bij meerdere elementen met dezelfde id kunnen selectie, labels en ankerlinks een ander element bereiken dan je bedoelt.": "An ID identifies one element in a document. If several elements share an ID, selectors, labels, and anchor links can reach an unintended element.",
+      "Zoek dezelfde id in dit bestand.": "Look for the same ID elsewhere in this file.",
+      "Bepaal welke elementen een eigen identiteit nodig hebben.": "Decide which elements need their own identity.",
+      "Een gedeelde class heeft een andere rol dan een unieke id.": "A shared class serves a different purpose from a unique ID.",
+      "Controleer waar dit element eindigt.": "Check where this element ends.",
+      "Een omvattend element wordt gesloten terwijl dit binnenste element nog open lijkt. Elementen moeten correct genest zijn. Sommige HTML-tags hebben optionele eindtags, maar deze controle slaat die over.": "The outer element closes while this inner element still appears open. Elements must nest correctly. This check skips HTML tags with optional closing tags.",
+      "Volg de binnenste openingstag tot de bijbehorende eindtag.": "Follow the inner opening tag to its matching closing tag.",
+      "Controleer de volgorde waarin je binnenste en buitenste elementen afsluit.": "Check the order in which you close the inner and outer elements.",
+      "Controleer de waarde na deze toekenning.": "Check the value after this assignment.",
+      "Na een koppeling tussen attribuutnaam en waarde ontbreekt hier een leesbare waarde. Een bewust lege waarde en een ontbrekende waarde zijn niet hetzelfde.": "The attribute has a connector but no readable value after it. A deliberately empty value still needs to be written as a value.",
+      "Controleer de grens tussen twee attributen.": "Check the boundary between two attributes.",
+      "Attributen in dezelfde starttag worden door witruimte van elkaar gescheiden. Controleer waar de ene waarde eindigt en de volgende naam begint.": "Whitespace separates attributes within an opening tag. Check where one value ends and the next name begins.",
+      "Controleer de begrenzing van deze attribuutwaarde.": "Check the boundaries of this attribute value.",
+      "Een waarde zonder aanhalingstekens mag niet elk teken bevatten. Controleer welk deel \xE9\xE9n waarde vormt en hoe je dat afbakent.": "Unquoted values only allow certain characters. Identify which text belongs to the value and how to mark its boundaries.",
+      "Controleer de plaats van deze toekenning.": "Check where this assignment appears.",
+      "Een gelijkteken verbindt een attribuutnaam met een waarde. Ga na of de naam op de juiste plaats staat.": "An equals sign connects an attribute name to its value. Check whether the name is in the right place.",
+      "Controleer de afsluiting van het HTML-commentaar.": "Check how this HTML comment ends.",
+      "Commentaar heeft een begin- en eindmarkering. Niet-afgesloten commentaar kan de rest van de pagina verbergen.": "A comment has opening and closing markers. An unclosed comment can hide the rest of the page.",
+      "Controleer de schrijfwijze van deze eindtag.": "Check the syntax of this closing tag.",
+      "Een eindtag en een zelfsluitende schrijfwijze hebben een verschillende structuur. Bekijk de plaats van de schuine streep.": "Closing tags and self-closing tags use different structures. Check where the slash appears.",
+      "Controleer de grens van dit attribuut.": "Check where this attribute starts and ends.",
+      "Een teken wordt hier als deel van een attribuutnaam gelezen. Controleer de verbinding met de waarde en de aanhalingstekens.": "The browser reads a character here as part of the attribute name. Check the connection to the value and the quotes around it.",
+      "Controleer deze eindtag.": "Check this closing tag.",
+      "Attributen horen in een starttag. Controleer ook of de vorige tag goed is afgesloten.": "Attributes belong in opening tags. Also check whether the previous tag closes properly.",
+      "Bekijk de gemarkeerde plaats en de tekens vlak ervoor.": "Look at the highlighted location and the characters just before it.",
+      "Baken naam, waarde en tag afzonderlijk af.": "Identify the boundaries of the name, value, and tag separately.",
+      "Controleer de opbouw van deze hexkleur.": "Check the format of this hex color.",
+      "Een hexkleur gebruikt groepen hexadecimale tekens voor kleurkanalen en soms transparantie. Controleer het aantal tekens en de gekozen notatie; niet elk aantal is geldig.": "A hex color uses hexadecimal characters to encode color channels and sometimes transparency. Check the character count and the format you intend to use.",
+      "Controleer de onderdelen van deze kleurfunctie.": "Check the parts of this color function.",
+      "Een kleurfunctie verwacht een bepaalde reeks kanalen en eventueel transparantie. Controleer aantal, volgorde en scheiding van de onderdelen.": "A color function expects specific channels and may accept transparency. Check the number, order, and separators of the parts.",
+      "Controleer het getal op deze plaats.": "Check the number at this location.",
+      "Hier verwacht CSS een numerieke waarde. Controleer hoe getal, decimaalteken en eventuele eenheid geschreven zijn.": "CSS expects a numeric value here. Check the number, decimal separator, and any unit.",
+      "Controleer de vierkante haakjes.": "Check the square brackets.",
+      "Een attribuutselector heeft een begin en einde. Controleer of de vierkante haakjes een volledig paar vormen.": "An attribute selector has an opening and a closing bracket. Check whether they form a complete pair.",
+      "Controleer het begin van deze CSS-functie.": "Check the start of this CSS function.",
+      "Functies gebruiken ronde haakjes om hun argumenten af te bakenen. Controleer de overgang van functienaam naar argumenten.": "Functions use parentheses to enclose their arguments. Check the transition from the function name to the arguments.",
+      "Controleer de scheiding van de onderdelen.": "Check how the parts are separated.",
+      "Deze constructie verwacht afzonderlijke onderdelen. De juiste scheiding hangt af van de functie of lijst waarin je werkt.": "This construct expects separate parts. The right separator depends on the function or list.",
+      "Controleer de naam van de CSS-variabele.": "Check the name of the CSS variable.",
+      "Een CSS-variabele heeft een eigen naam met een vaste beginstructuur. Vergelijk de verwijzing met de declaratie en controleer de scheiding van de onderdelen.": "A CSS variable name starts with a required prefix. Compare the reference with the declaration and check the separators between parts.",
+      "Controleer de opbouw van deze mediaquery.": "Check the structure of this media query.",
+      "Een mediaquery beschrijft wanneer stijlen gelden. Controleer de voorwaarde, de haakjes en de overgang naar het stijlblok.": "A media query describes when styles apply. Check the condition, the parentheses, and the transition to the style block.",
+      "Controleer de voorwaarde in deze CSS-regel.": "Check the condition in this CSS rule.",
+      "De regel verwacht een voorwaarde. Controleer welke eigenschap of omstandigheid je wilt testen en hoe je die afbakent.": "The rule expects a condition. Identify which property or circumstance to test and check its boundaries.",
+      "Controleer de verbinding tussen eigenschap en waarde.": "Check the connection between the property and its value.",
+      "Een CSS-declaratie bestaat uit een eigenschap en een waarde. De dubbele punt (:) verbindt ze; een gelijkteken heeft hier niet die rol.": "A CSS declaration has a property and a value. The colon (:) connects them.",
+      "Controleer waar deze CSS-declaratie eindigt.": "Check where this CSS declaration ends.",
+      "Een puntkomma scheidt opeenvolgende declaraties. Controleer of twee declaraties onbedoeld aan elkaar hangen. Na de laatste declaratie v\xF3\xF3r } is de puntkomma optioneel.": "A semicolon separates consecutive declarations. Check whether two declarations run together. The semicolon after the last declaration before } is optional.",
+      "Controleer de afsluiting van dit CSS-blok.": "Check how this CSS block closes.",
+      "Een stijlblok heeft een openende en een sluitende accolade. Volg het blok vanaf zijn selector en controleer of het een einde heeft.": "A style block has an opening and closing brace. Follow the block from its selector to its closing brace.",
+      "Controleer waar het CSS-blok begint.": "Check where the CSS block starts.",
+      "Een selector en de bijbehorende declaraties vormen samen een stijlregel. Accolades bakenen het declaratieblok af.": "A selector and its declarations make up a style rule. Braces enclose the declaration block.",
+      "Controleer de waarde van deze eigenschap.": "Check the value of this property.",
+      "Een gewone CSS-eigenschap heeft een waarde nodig. Vraag je af welke soort waarde hier past: bijvoorbeeld een maat, kleur of keyword.": "A regular CSS property needs a value. Consider which kind of value fits here, such as a measurement, color, or keyword.",
+      "Controleer de opbouw van deze declaratie.": "Check the structure of this declaration.",
+      "In een CSS-blok verwacht de parser een eigenschap met een waarde. Bekijk ook de afsluiting van de vorige declaratie.": "The parser expects a property with a value inside a CSS block. Check how the previous declaration ends too.",
+      "Controleer de haakjes van deze CSS-functie.": "Check the parentheses of this CSS function.",
+      "Een functie of groepering heeft bij elkaar horende ronde haakjes. Controleer ook of een waarde of aanhalingsteken ertussen onvolledig is.": "Functions and groups use matching parentheses. Check for incomplete values or unclosed quotes inside them.",
+      "Een attribuutselector gebruikt bij elkaar horende vierkante haakjes. Controleer waar de selectie begint en eindigt.": "An attribute selector uses matching square brackets. Check where the selector starts and ends.",
+      "Controleer deze tekstwaarde.": "Check this text value.",
+      "Hier wordt een tekstwaarde verwacht. Bekijk hoe je de tekst afbakent en of de aanhalingstekens bij elkaar horen.": "A text value is expected here. Check its boundaries and whether the quotes match.",
+      "Controleer de afsluiting van deze CSS-tekst.": "Check how this CSS string ends.",
+      "Controleer de afsluiting van dit CSS-commentaar.": "Check how this CSS comment ends.",
+      "Een tekstwaarde moet met hetzelfde soort aanhalingsteken beginnen en eindigen. Controleer of volgende declaraties onbedoeld binnen de tekst vallen.": "A string must start and end with the same type of quote. Check whether later declarations are accidentally inside the string.",
+      "Blokcommentaar heeft een begin- en eindmarkering. Zolang het commentaar openstaat, wordt volgende code mogelijk niet als CSS gelezen.": "A block comment has opening and closing markers. While a comment stays open, later code can be treated as part of the comment.",
+      "CSS-structuur": "CSS structure",
+      "Zoek de bijbehorende afsluiting.": "Find the matching closing character.",
+      "Bekijk de gemarkeerde plaats en de declaratie ervoor.": "Look at the highlighted location and the declaration before it.",
+      "Scheid in gedachten de eigenschap, de waarde en de blokgrenzen.": "Identify the property, the value, and the block boundaries separately.",
+      "Letters en volgorde": "Letters and their order",
+      "Mogelijk ontbrekende, extra of herhaalde letters; aangrenzende letters of herkenbare woorddelen die van plaats wisselen. Vergelijk met een bekende naam.": "Letters may be missing, extra, or repeated. Adjacent letters or recognizable word parts can swap places. Compare with a known name.",
+      "Een letter of cijfer kan op een ander teken lijken. Bekijk vorm en context. De tool verklaart niet waarom een verwisseling is gebeurd.": "A letter or digit can resemble another character. Look at its shape and context.",
+      "Hoofdletters en woordgrenzen": "Capitalization and word boundaries",
+      "CamelCase, koppeltekens en onbedoelde spaties hebben een andere rol per taal. Bestaande API-namen staan vast.": "CamelCase, hyphens, and unintended spaces play different roles in different languages. Existing API names have fixed spellings.",
+      "Leestekens en koppelingen": "Punctuation and connections",
+      "Een punt, puntkomma, dubbele punt en gelijkteken doen verschillende dingen. Bepaal eerst welke verbinding je bedoelt.": "A dot, semicolon, colon, and equals sign each do different things. Start by deciding what you intend to connect.",
+      "Paren en grenzen": "Pairs and boundaries",
+      "Volg haakjes, aanhalingstekens, tags en blokken vanaf hun begin tot hun einde. Controleer ook wat er vlak v\xF3\xF3r de markering staat.": "Follow brackets, quotes, tags, and blocks from opening to closing. Also check immediately before the highlight.",
+      "Namen consequent overnemen": "Using names consistently",
+      "Vergelijk gebruik en declaratie binnen hetzelfde bereik. Dezelfde bedoeling met een andere naam kan onbedoeld naar iets anders verwijzen.": "Compare the use and the declaration within the same scope. A different spelling can refer to something else.",
+      "Inspringing en overzicht": "Indentation and readability",
+      "Gemengde tabs en spaties kunnen de structuur onduidelijk maken. Inspringing is hier een leesbaarheidsafspraak, geen diagnose of automatische syntaxfout.": "Mixed tabs and spaces can make the structure hard to see. These hints help you read and organize the indentation.",
+      "Stap voor stap lezen": "Reading step by step",
+      "Kies \xE9\xE9n aandachtspunt. Open de uitleg als je die nodig hebt, loop de denkstappen na en controleer opnieuw. Met Toon meer kun je extra gevonden aandachtspunten bekijken.": "Choose one hint. Open the explanation if you need it, follow the steps, then check again. Select Show more to see additional findings.",
+      "HTML-tag": "HTML tag",
+      "JavaScript-browserbegrip": "JavaScript browser API name",
+      "JavaScript-eigenschap": "JavaScript property",
+      "JavaScript-eventnaam": "JavaScript event name",
+      "JavaScript-sleutelwoord": "JavaScript keyword",
+      "JavaScript-structuur": "JavaScript structure",
+      "JavaScript-toekenning": "JavaScript assignment",
+      "Dit bestand is te groot voor de lokale analyse (limiet: {limit} tekens).": "This file is too large for local analysis (limit: {limit} characters).",
+      "Eerst {limit} idee\xEBn. Je kunt het maximum verhogen in de instellingen.": "Showing the first {limit} ideas. You can raise the limit in Settings.",
+      "Er zijn meer aandachtspunten. Eerst deze {limit}; de rest verschijnt na je aanpassingen.": "Showing the first {limit} findings. You can show more below.",
+      "STAP VOOR STAP": "STEP BY STEP",
+      "Jij zoekt. Wij wijzen de weg.": "Explore the code. We\u2019ll guide you.",
+      "Hints pauzeren": "Pause hints",
+      "Hints hervatten": "Resume hints",
+      Ondersteuning: "Learning support",
+      "Dyslexie \xB7 codehulp": "Dyslexia \xB7 coding support",
+      Programmeerprincipes: "Programming principles",
+      "Mogelijke aandachtspunten, geen beoordeling. Geen hint betekent niet dat alle code correct is.": "These hints point to things you can investigate. Review your code even when no hints appear.",
+      Instellingen: "Settings",
+      "Welke patronen helpt CodeKompas nalopen?": "What patterns does CodeKompas help you check?",
+      "Dit zijn patronen in code, geen test op dyslexie.": "This guide describes patterns in code.",
+      "{count} mogelijke aandachtspunten. Kies er \xE9\xE9n.": "Things to check: {count}. Choose one to explore.",
+      "Geen aandachtspunten gevonden binnen de ondersteunde controles.": "The supported checks found nothing to flag.",
+      "Onderzoek deze idee\xEBn. Het zijn geen fouten.": "Explore these programming ideas.",
+      "Hier zijn nu geen principesuggesties. Je kunt dit luik in de instellingen aanzetten.": "There are no principle suggestions right now. You can enable them in Settings.",
+      "REGEL {line}": "LINE {line}",
+      "Zelf nalopen": "Check it yourself",
+      "Meer uitleg": "More explanation",
+      "Bekijk in mijn code": "Show in my code",
+      "Deze naam is bewust zo geschreven": "I spelled this name this way on purpose",
+      "Toon meer ({visible} van {total} zichtbaar)": "Show more ({visible} of {total} shown)",
+      "Open CodeKompas \u2014 hints zonder oplossingen": "Open CodeKompas \u2014 hints to guide your learning",
+      "Open een HTML-, CSS- of JavaScript-bestand.": "Open an HTML, CSS, or JavaScript file.",
+      "Even wachten op de analyse\u2026": "Analyzing your code\u2026",
+      "De hints staan op pauze.": "Hints are paused.",
+      "CodeKompas staat uit in de instellingen.": "CodeKompas is disabled in Settings.",
+      "De analyse lukte niet. Probeer opnieuw via CodeKompas: Nu analyseren.": "Analysis failed. Try again using the CodeKompas Analyze Now command.",
+      "De via CodeKompas genegeerde woorden zijn hersteld. Woorden in je instellingen blijven behouden.": "CodeKompas reset the words you ignored through the panel. Your Settings list is still in effect.",
+      "REGEL {line}, KOLOM {column}": "LINE {line}, COLUMN {column}",
+      "Voorbeeld met andere code": "Example using different code"
+    };
+  }
+});
+
+// src/language.js
+var require_language = __commonJS({
+  "src/language.js"(exports2, module2) {
+    "use strict";
+    var english = require_messages_en();
+    function translator2(language) {
+      return (message, values2) => {
+        const translated = language === "en" && Object.hasOwn(english, message) ? english[message] : message;
+        return values2 ? translated.replace(/\{(\w+)\}/g, (_2, key) => values2[key]) : translated;
+      };
+    }
+    var panelMessages = {
+      eyebrow: "STAP VOOR STAP",
+      tagline: "Jij zoekt. Wij wijzen de weg.",
+      pause: "Hints pauzeren",
+      resume: "Hints hervatten",
+      navigation: "Ondersteuning",
+      spelling: "Dyslexie \xB7 codehulp",
+      principles: "Programmeerprincipes",
+      footer: "Mogelijke aandachtspunten, geen beoordeling. Geen hint betekent niet dat alle code correct is.",
+      settings: "Instellingen",
+      guideTitle: "Welke patronen helpt CodeKompas nalopen?",
+      guideIntro: "Dit zijn patronen in code, geen test op dyslexie.",
+      issueCount: "{count} mogelijke aandachtspunten. Kies er \xE9\xE9n.",
+      noIssues: "Geen aandachtspunten gevonden binnen de ondersteunde controles.",
+      somePrinciples: "Onderzoek deze idee\xEBn. Het zijn geen fouten.",
+      noPrinciples: "Hier zijn nu geen principesuggesties. Je kunt dit luik in de instellingen aanzetten.",
+      line: "REGEL {line}",
+      location: "REGEL {line}, KOLOM {column}",
+      example: "Voorbeeld met andere code",
+      steps: "Zelf nalopen",
+      moreExplanation: "Meer uitleg",
+      locate: "Bekijk in mijn code",
+      ignore: "Deze naam is bewust zo geschreven",
+      more: "Toon meer ({visible} van {total} zichtbaar)"
+    };
+    function panelLabels2(translate) {
+      return Object.fromEntries(Object.entries(panelMessages).map(([key, message]) => [key, translate(message)]));
+    }
+    module2.exports = { translator: translator2, panelLabels: panelLabels2 };
+  }
+});
+
 // node_modules/@vscode/l10n/dist/main.js
 var require_main = __commonJS({
   "node_modules/@vscode/l10n/dist/main.js"(exports2, module2) {
@@ -105140,6 +105644,7 @@ var require_analyzer = __commonJS({
     "use strict";
     var acorn = require_acorn();
     var loose = require_acorn_loose();
+    var { translator: translator2 } = require_language();
     var { htmlSyntax, cssSyntax } = require_syntax();
     var walk = require_walk();
     var scope = require_eslint_scope();
@@ -105264,8 +105769,9 @@ var require_analyzer = __commonJS({
       events: { title: "Events \xB7 reageren op een actie", definition: "Een event is een gebeurtenis, bijvoorbeeld een klik. Een handler is code die erop reageert.", question: "Kun je benoemen welke actie je volgt en welke taak de handler uitvoert?", explanation: "Denk aan het onderscheid tussen een functie doorgeven en een functie meteen uitvoeren. Houd de taak van een handler overzichtelijk." }
     };
     function analyze2(text, language, options = {}) {
+      const translate = translator2(options.language);
       const maxBytes = options.maxBytes || 25e4;
-      if (text.length > maxBytes) return { issues: [], principles: [], notice: "Dit bestand is te groot voor de lokale analyse (limiet: " + maxBytes + " tekens)." };
+      if (text.length > maxBytes) return { issues: [], principles: [], notice: translate("Dit bestand is te groot voor de lokale analyse (limiet: {limit} tekens).", { limit: maxBytes }) };
       const issues = [], principles = [], ignored = new Set(options.ignoreWords || []), seen = /* @__PURE__ */ new Set(), seenPrinciples = /* @__PURE__ */ new Set();
       function addIssue(item, offset = 0) {
         let start = Math.max(0, Math.min(Math.max(0, text.length - 1), item.start + offset)), end = Math.min(text.length, Math.max(start + 1, item.end + offset));
@@ -105279,7 +105785,7 @@ var require_analyzer = __commonJS({
         const kind = classify(word, list, caseSensitive);
         if (!kind) return;
         const hint = hints[reference ? "reference" : kind];
-        let detail = hint[1], why = "", steps = ["Lees de gemarkeerde naam langzaam.", "Vergelijk de naam met je cursus of de oorspronkelijke declaratie."];
+        let detail = hint[1], suffix = "", why = "", steps = ["Lees de gemarkeerde naam langzaam.", "Vergelijk de naam met je cursus of de oorspronkelijke declaratie."];
         if (kind === "separators" && context === "CSS-eigenschap") {
           detail = "Meerdelige standaard CSS-eigenschappen gebruiken doorgaans kleine letters met koppeltekens: kebab-case. Een spatie kan de naam opsplitsen; camelCase hoort vaak bij de JavaScript-weergave van zo\u2019n eigenschap.";
           steps = ["Verdeel de bedoelde eigenschap in woorden.", "Controleer hoe de woorden in CSS verbonden zijn.", "Vergelijk de volledige eigenschapsnaam met je cursus."];
@@ -105292,20 +105798,21 @@ var require_analyzer = __commonJS({
           detail = "Lees de naam in kleine stukken en wijs de letters \xE9\xE9n voor \xE9\xE9n aan. Controleer vooral de volgorde binnen elk stuk. De tool toont bewust geen vervangende naam.";
         } else if (reference) {
           why = "Deze naam lijkt op een declaratie die binnen dit bereik bestaat.";
-          if (kind === "case") detail += " Bij eigen namen kan camelCase de woordgrenzen zichtbaar maken. Gebruik op alle plaatsen exact de schrijfwijze van je declaratie.";
+          if (kind === "case") suffix = " Bij eigen namen kan camelCase de woordgrenzen zichtbaar maken. Gebruik op alle plaatsen exact de schrijfwijze van je declaratie.";
         } else if (context === "CSS-eigenschap") {
-          detail += " Een CSS-eigenschap benoemt wat je vormgeeft. Meerdelige standaardnamen gebruiken meestal kleine letters met koppeltekens (kebab-case).";
+          suffix = " Een CSS-eigenschap benoemt wat je vormgeeft. Meerdelige standaardnamen gebruiken meestal kleine letters met koppeltekens (kebab-case).";
         } else if (context === "HTML-attribuut") {
-          detail += " Het attribuut is de naam v\xF3\xF3r een eventuele koppeling met een waarde; controleer de waarde afzonderlijk.";
+          suffix = " Het attribuut is de naam v\xF3\xF3r een eventuele koppeling met een waarde; controleer de waarde afzonderlijk.";
         }
-        if (context === "JavaScript-eventnaam") detail += " Browsergebeurtenissen hebben vaste namen. Zelfgemaakte events kunnen een andere, bewust gekozen naam hebben.";
+        if (context === "JavaScript-eventnaam") suffix = " Browsergebeurtenissen hebben vaste namen. Zelfgemaakte events kunnen een andere, bewust gekozen naam hebben.";
         if (kind === "case" && ["JavaScript-eigenschap", "JavaScript-browserbegrip"].includes(context)) principle("naming", start, start + word.length, "Bij deze naam speelt de schrijfwijze van samengestelde woorden mee.");
-        addIssue({ start, end: start + word.length, context, kind: reference ? "reference" : kind, message: hint[0], detail, why, steps, ignorable: true });
+        addIssue({ start, end: start + word.length, context, kind: reference ? "reference" : kind, message: hint[0], detail: [detail, suffix], why, steps, ignorable: true });
       }
       function principle(id, start, end, reason) {
         if (options.principles === false || seenPrinciples.has(id) || (options.disabledPrinciples || []).includes(id)) return;
         seenPrinciples.add(id);
-        principles.push({ id, start, end, reason, ...concepts[id] });
+        const { title, definition, question, explanation } = concepts[id];
+        principles.push({ id, start, end, reason: translate(reason), title: translate(title), definition: translate(definition), question: translate(question), explanation: translate(explanation) });
       }
       function indentation(code, offset, starts) {
         if (options.indentationHints === false) return;
@@ -105801,14 +106308,19 @@ var require_analyzer = __commonJS({
       else if (language === "html") htmlAnalyze(text);
       for (const issue of issues) {
         const names = { case: "Hoofdletters", order: "Lettervolgorde", chunks: "Volgorde van woorddelen", missing: "Ontbrekende letter", extra: "Extra letter", repeated: "Herhaalde letter", shape: "Gelijkende tekens", separators: "Woordgrenzen", reference: "Naam consequent overnemen", letters: "Letters vergelijken", syntax: "Structuur en leestekens", convention: "Schrijfafspraak", logic: "Bedoeling controleren" };
-        issue.family = names[issue.kind] || "Aandachtspunt";
+        issue.family = translate(names[issue.kind] || "Aandachtspunt");
+        issue.context = translate(issue.context);
+        issue.message = translate(issue.message);
+        issue.detail = Array.isArray(issue.detail) ? issue.detail.map((part) => translate(part)).join("") : translate(issue.detail);
+        if (issue.why) issue.why = translate(issue.why);
+        if (issue.steps) issue.steps = issue.steps.map((step) => translate(step));
       }
       const limit = Math.max(1, Math.min(options.maxHints || 8, 100));
       issues.sort((a3, b2) => a3.start - b2.start);
       const maxPrinciples = Math.max(1, Math.min(options.maxPrinciples || 8, 30));
       const priority = ["styling", "tokens", "dry", "es6"];
       principles.sort((a3, b2) => (priority.includes(a3.id) ? priority.indexOf(a3.id) : 10) - (priority.includes(b2.id) ? priority.indexOf(b2.id) : 10));
-      return { issues: issues.slice(0, limit), principles: principles.slice(0, maxPrinciples), principleNotice: principles.length > maxPrinciples ? `Eerst ${maxPrinciples} idee\xEBn. Je kunt het maximum verhogen in de instellingen.` : "", total: issues.length, notice: issues.length > limit ? `Er zijn meer aandachtspunten. Eerst deze ${limit}; de rest verschijnt na je aanpassingen.` : "" };
+      return { issues: issues.slice(0, limit), principles: principles.slice(0, maxPrinciples), principleNotice: principles.length > maxPrinciples ? translate("Eerst {limit} idee\xEBn. Je kunt het maximum verhogen in de instellingen.", { limit: maxPrinciples }) : "", total: issues.length, notice: issues.length > limit ? translate("Er zijn meer aandachtspunten. Eerst deze {limit}; de rest verschijnt na je aanpassingen.", { limit }) : "" };
     }
     module2.exports = { analyze: analyze2, distance, classify, concepts };
   }
@@ -105831,19 +106343,48 @@ var require_patterns = __commonJS({
   }
 });
 
+// src/hint-examples.js
+var require_hint_examples = __commonJS({
+  "src/hint-examples.js"(exports2, module2) {
+    "use strict";
+    module2.exports = Object.freeze({
+      "html-attribute-separator": '<a href="/about">About</a>',
+      "html-attribute-assignment": '<a href="/about">About</a>',
+      "html-attribute-quote": '<button type="button">Open</button>',
+      "html-duplicate-id": '<h2 id="intro">Intro</h2>\n<h2 id="summary">Summary</h2>',
+      "html-tag-close": "<section>Content</section>",
+      "html-nesting": "<section><p>Content</p></section>",
+      "css-colonexpected": ".tile { padding: 8px }",
+      "css-semicolonexpected": ".tile { padding: 8px; margin: 4px }",
+      "css-lcurlyexpected": ".tile { padding: 8px }",
+      "css-rcurlyexpected": ".tile { padding: 8px }",
+      "css-unit": ".tile { padding: 8px }",
+      "js-assignment-value": "const itemCount = 3;",
+      "js-delimiters": 'if (ready) { console.log("Ready"); }',
+      "js-member-separator": 'const label = document.querySelector(".label");\nlabel.textContent = "Ready";',
+      "js-split-name": 'const heading = document.querySelector("h1");',
+      "js-handler-call": 'button.addEventListener("click", openMenu);',
+      "js-collection-member": 'for (const link of document.querySelectorAll("a")) {\n  link.classList.add("highlight");\n}'
+    });
+  }
+});
+
 // src/extension.js
 var vscode = require("vscode");
 var crypto = require("node:crypto");
 var { analyze } = require_analyzer();
 var patternGuide = require_patterns();
+var hintExamples = require_hint_examples();
+var { translator, panelLabels } = require_language();
 var supported = /* @__PURE__ */ new Set(["html", "css", "javascript"]);
 function activate(context) {
   const diagnostics = vscode.languages.createDiagnosticCollection("CodeKompas");
   const timers = /* @__PURE__ */ new Map(), results = /* @__PURE__ */ new Map(), hintLimits = /* @__PURE__ */ new Map();
   let paused = false, view, lastDocument;
+  let language = context.globalState.get("language", "en") === "nl" ? "nl" : "en";
+  let translate = translator(language), labels = panelLabels(translate);
   const status = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 40);
   status.command = "codekompas.open";
-  status.tooltip = "Open CodeKompas \u2014 hints zonder oplossingen";
   status.show();
   function config(doc) {
     return vscode.workspace.getConfiguration("codekompas", doc?.uri);
@@ -105851,23 +106392,39 @@ function activate(context) {
   function ignored(doc) {
     return [...config(doc).get("ignoreWords", []), ...context.workspaceState.get("ignoredWords", [])];
   }
+  function issuePayload(doc, issue, index) {
+    const start = doc.positionAt(issue.start);
+    const end = doc.positionAt(issue.end);
+    const text = doc.lineAt(start.line).text;
+    const from = Math.max(0, start.character - 48);
+    const to = Math.min(text.length, start.character + 96);
+    const highlightEnd = end.line === start.line ? Math.min(end.character, to) : to;
+    const excerpt = {
+      before: (from ? "\u2026" : "") + text.slice(from, start.character),
+      highlight: text.slice(start.character, highlightEnd),
+      after: text.slice(highlightEnd, to) + (to < text.length ? "\u2026" : "")
+    };
+    const example = Object.hasOwn(hintExamples, issue.rule) ? hintExamples[issue.rule] : void 0;
+    return { ...issue, index, line: start.line + 1, column: start.character + 1, excerpt, example };
+  }
   function payload() {
     const doc = lastDocument;
-    if (!doc || doc.isClosed || !supported.has(doc.languageId)) return { paused, patternGuide, issues: [], principles: [], notice: "Open een HTML-, CSS- of JavaScript-bestand.", file: "" };
-    const result = results.get(doc.uri.toString()) || { issues: [], principles: [], notice: "Even wachten op de analyse\u2026" };
+    const chrome = { language, labels, paused, patternGuide: patternGuide.map(({ title, text }) => ({ title: translate(title), text: translate(text) })) };
+    if (!doc || doc.isClosed || !supported.has(doc.languageId)) return { ...chrome, issues: [], principles: [], notice: translate("Open een HTML-, CSS- of JavaScript-bestand."), file: "" };
+    const result = results.get(doc.uri.toString()) || { issues: [], principles: [], notice: translate("Even wachten op de analyse\u2026") };
     return {
-      paused,
-      patternGuide,
+      ...chrome,
       enabled: config(doc).get("enabled", true),
       file: doc.uri.path.split("/").pop(),
       version: doc.version,
       uri: doc.uri.toString(),
       ...result,
-      issues: result.issues.map((x2, i2) => ({ ...x2, index: i2, line: doc.positionAt(x2.start).line + 1 })),
+      issues: result.issues.map((issue, index) => issuePayload(doc, issue, index)),
       principles: result.principles.map((x2, i2) => ({ ...x2, index: i2, line: doc.positionAt(x2.start).line + 1 }))
     };
   }
   function publish() {
+    status.tooltip = translate("Open CodeKompas \u2014 hints zonder oplossingen");
     status.text = paused ? "$(debug-pause) CodeKompas" : "$(compass) CodeKompas";
     view?.webview.postMessage({ type: "update", data: payload() });
   }
@@ -105876,12 +106433,12 @@ function activate(context) {
     const cfg = config(doc), key = doc.uri.toString();
     if (paused || !cfg.get("enabled", true)) {
       diagnostics.delete(doc.uri);
-      results.set(key, { issues: [], principles: [], notice: paused ? "De hints staan op pauze." : "CodeKompas staat uit in de instellingen." });
+      results.set(key, { issues: [], principles: [], notice: translate(paused ? "De hints staan op pauze." : "CodeKompas staat uit in de instellingen.") });
       publish();
       return;
     }
     try {
-      const result = analyze(doc.getText(), doc.languageId, { ignoreWords: ignored(doc), maxHints: hintLimits.get(key) || cfg.get("maxHints", 8), styleConventions: cfg.get("styleConventions", true), indentationHints: cfg.get("indentationHints", true), maxPrinciples: cfg.get("maxPrinciples", 8), principles: cfg.get("principles", true), disabledPrinciples: cfg.get("disabledPrinciples", []), maxBytes: cfg.get("maxCharacters", 25e4) });
+      const result = analyze(doc.getText(), doc.languageId, { language, ignoreWords: ignored(doc), maxHints: hintLimits.get(key) || cfg.get("maxHints", 8), styleConventions: cfg.get("styleConventions", true), indentationHints: cfg.get("indentationHints", true), maxPrinciples: cfg.get("maxPrinciples", 8), principles: cfg.get("principles", true), disabledPrinciples: cfg.get("disabledPrinciples", []), maxBytes: cfg.get("maxCharacters", 25e4) });
       results.set(key, result);
       diagnostics.set(doc.uri, result.issues.map((x2) => {
         const d2 = new vscode.Diagnostic(new vscode.Range(doc.positionAt(x2.start), doc.positionAt(x2.end)), x2.message, vscode.DiagnosticSeverity.Information);
@@ -105892,7 +106449,7 @@ function activate(context) {
       }));
     } catch {
       diagnostics.delete(doc.uri);
-      results.set(key, { issues: [], principles: [], notice: "De analyse lukte niet. Probeer opnieuw via CodeKompas: Nu analyseren." });
+      results.set(key, { issues: [], principles: [], notice: translate("De analyse lukte niet. Probeer opnieuw via CodeKompas: Nu analyseren.") });
     }
     if (lastDocument === doc) publish();
   }
@@ -105914,17 +106471,29 @@ function activate(context) {
     for (const d2 of vscode.workspace.textDocuments) schedule(d2, true);
     publish();
   }
+  async function toggleLanguage() {
+    language = language === "en" ? "nl" : "en";
+    translate = translator(language);
+    labels = panelLabels(translate);
+    recheck();
+    await context.globalState.update("language", language);
+  }
   const provider = { resolveWebviewView(v2) {
     view = v2;
     v2.webview.options = { enableScripts: true, localResourceRoots: [vscode.Uri.joinPath(context.extensionUri, "media")] };
+    const version = context.extension.packageJSON.version;
     const nonce = crypto.randomBytes(24).toString("hex");
     const script = v2.webview.asWebviewUri(vscode.Uri.joinPath(context.extensionUri, "media", "panel.js"));
     const style = v2.webview.asWebviewUri(vscode.Uri.joinPath(context.extensionUri, "media", "panel.css"));
-    v2.webview.html = `<!doctype html><html lang="nl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src ${v2.webview.cspSource}; script-src 'nonce-${nonce}';"><link rel="stylesheet" href="${style}"><title>CodeKompas</title></head><body><header><p class="eyebrow">STAP VOOR STAP</p><h1>CodeKompas</h1><p>Jij zoekt. Wij wijzen de weg.</p><p id="file"></p><button id="pause" type="button">Pauzeren</button></header><nav aria-label="Ondersteuning"><button id="spelling" aria-pressed="true" type="button">Dyslexie \xB7 codehulp</button><button id="principles" aria-pressed="false" type="button">Programmeerprincipes</button></nav><p id="summary" role="status" aria-live="polite"></p><main id="cards"></main><footer><p>Mogelijke aandachtspunten, geen beoordeling. Geen hint betekent niet dat alle code correct is.</p><button id="settings" type="button">Instellingen</button></footer><script nonce="${nonce}" src="${script}"></script></body></html>`;
+    v2.webview.html = `<!doctype html><html lang="${language}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src ${v2.webview.cspSource}; script-src 'nonce-${nonce}';"><link rel="stylesheet" href="${style}"><title>CodeKompas</title></head><body><header><div class="header-meta"><p id="eyebrow" class="eyebrow">${labels.eyebrow}</p><p class="version">v${version}</p></div><h1>CodeKompas</h1><p id="tagline">${labels.tagline}</p><p id="file"></p><button id="pause" type="button">${labels.pause}</button> <button id="language" type="button" lang="${language === "en" ? "nl" : "en"}">${language === "en" ? "Nederlands" : "English"}</button></header><nav id="navigation" aria-label="${labels.navigation}"><button id="spelling" aria-pressed="true" type="button">${labels.spelling}</button><button id="principles" aria-pressed="false" type="button">${labels.principles}</button></nav><p id="summary" role="status" aria-live="polite"></p><main id="cards"></main><footer><p id="footer">${labels.footer}</p><button id="settings" type="button">${labels.settings}</button></footer><script nonce="${nonce}" src="${script}"></script></body></html>`;
     context.subscriptions.push(v2.webview.onDidReceiveMessage(async (msg) => {
       if (!msg || typeof msg.type !== "string") return;
       if (msg.type === "ready") {
         publish();
+        return;
+      }
+      if (msg.type === "toggleLanguage") {
+        await toggleLanguage();
         return;
       }
       if (msg.type === "pause") {
@@ -105972,6 +106541,7 @@ function activate(context) {
     vscode.commands.registerCommand("codekompas.analyze", () => {
       if (vscode.window.activeTextEditor) schedule(vscode.window.activeTextEditor.document, true);
     }),
+    vscode.commands.registerCommand("codekompas.toggleLanguage", toggleLanguage),
     vscode.commands.registerCommand("codekompas.pause", () => {
       paused = !paused;
       recheck();
@@ -105979,7 +106549,7 @@ function activate(context) {
     vscode.commands.registerCommand("codekompas.resetIgnored", async () => {
       await context.workspaceState.update("ignoredWords", []);
       recheck();
-      vscode.window.showInformationMessage("De via CodeKompas genegeerde woorden zijn hersteld. Woorden in je instellingen blijven behouden.");
+      vscode.window.showInformationMessage(translate("De via CodeKompas genegeerde woorden zijn hersteld. Woorden in je instellingen blijven behouden."));
     }),
     vscode.workspace.onDidChangeTextDocument((e2) => {
       if (e2.contentChanges.length) schedule(e2.document);

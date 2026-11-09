@@ -2,6 +2,7 @@
 // Pure analysis: no filesystem, network, VS Code imports or student-code execution.
 const acorn = require('acorn');
 const loose = require('acorn-loose');
+const {translator}=require('./language');
 const {htmlSyntax,cssSyntax}=require('./syntax');
 const walk = require('acorn-walk');
 const scope = require('eslint-scope');
@@ -121,8 +122,9 @@ const concepts={
  events:{title:'Events · reageren op een actie',definition:'Een event is een gebeurtenis, bijvoorbeeld een klik. Een handler is code die erop reageert.',question:'Kun je benoemen welke actie je volgt en welke taak de handler uitvoert?',explanation:'Denk aan het onderscheid tussen een functie doorgeven en een functie meteen uitvoeren. Houd de taak van een handler overzichtelijk.'}
 };
 function analyze(text, language, options={}) {
+ const translate=translator(options.language);
  const maxBytes=options.maxBytes || 250000;
- if(text.length>maxBytes)return {issues:[],principles:[],notice:'Dit bestand is te groot voor de lokale analyse (limiet: '+maxBytes+' tekens).'};
+ if(text.length>maxBytes)return {issues:[],principles:[],notice:translate('Dit bestand is te groot voor de lokale analyse (limiet: {limit} tekens).',{limit:maxBytes})};
  const issues=[], principles=[], ignored=new Set(options.ignoreWords||[]), seen=new Set(), seenPrinciples=new Set();
  function addIssue(item,offset=0){
   let start=Math.max(0,Math.min(Math.max(0,text.length-1),item.start+offset)),end=Math.min(text.length,Math.max(start+1,item.end+offset));
@@ -134,7 +136,7 @@ function analyze(text, language, options={}) {
   if(ignored.has(word))return;
   const kind=classify(word,list,caseSensitive); if(!kind)return;
   const hint=hints[reference?'reference':kind];
-  let detail=hint[1],why='',steps=['Lees de gemarkeerde naam langzaam.','Vergelijk de naam met je cursus of de oorspronkelijke declaratie.'];
+  let detail=hint[1],suffix='',why='',steps=['Lees de gemarkeerde naam langzaam.','Vergelijk de naam met je cursus of de oorspronkelijke declaratie.'];
   if(kind==='separators'&&context==='CSS-eigenschap'){
    detail='Meerdelige standaard CSS-eigenschappen gebruiken doorgaans kleine letters met koppeltekens: kebab-case. Een spatie kan de naam opsplitsen; camelCase hoort vaak bij de JavaScript-weergave van zo’n eigenschap.';
    steps=['Verdeel de bedoelde eigenschap in woorden.','Controleer hoe de woorden in CSS verbonden zijn.','Vergelijk de volledige eigenschapsnaam met je cursus.'];
@@ -145,19 +147,21 @@ function analyze(text, language, options={}) {
   }else if(kind==='order'){
    why='Deze naam lijkt op een bekend begrip, met mogelijk twee letters in een andere volgorde.';
    detail='Lees de naam in kleine stukken en wijs de letters één voor één aan. Controleer vooral de volgorde binnen elk stuk. De tool toont bewust geen vervangende naam.';
-  }else if(reference){why='Deze naam lijkt op een declaratie die binnen dit bereik bestaat.';if(kind==='case')detail+=' Bij eigen namen kan camelCase de woordgrenzen zichtbaar maken. Gebruik op alle plaatsen exact de schrijfwijze van je declaratie.';}
+  }else if(reference){why='Deze naam lijkt op een declaratie die binnen dit bereik bestaat.';if(kind==='case')suffix=' Bij eigen namen kan camelCase de woordgrenzen zichtbaar maken. Gebruik op alle plaatsen exact de schrijfwijze van je declaratie.';}
   else if(context==='CSS-eigenschap'){
-   detail+=' Een CSS-eigenschap benoemt wat je vormgeeft. Meerdelige standaardnamen gebruiken meestal kleine letters met koppeltekens (kebab-case).';
+   suffix=' Een CSS-eigenschap benoemt wat je vormgeeft. Meerdelige standaardnamen gebruiken meestal kleine letters met koppeltekens (kebab-case).';
   }else if(context==='HTML-attribuut'){
-   detail+=' Het attribuut is de naam vóór een eventuele koppeling met een waarde; controleer de waarde afzonderlijk.';
+   suffix=' Het attribuut is de naam vóór een eventuele koppeling met een waarde; controleer de waarde afzonderlijk.';
   }
-  if(context==='JavaScript-eventnaam')detail+=' Browsergebeurtenissen hebben vaste namen. Zelfgemaakte events kunnen een andere, bewust gekozen naam hebben.';
+  if(context==='JavaScript-eventnaam')suffix=' Browsergebeurtenissen hebben vaste namen. Zelfgemaakte events kunnen een andere, bewust gekozen naam hebben.';
   if(kind==='case'&&['JavaScript-eigenschap','JavaScript-browserbegrip'].includes(context))principle('naming',start,start+word.length,'Bij deze naam speelt de schrijfwijze van samengestelde woorden mee.');
-  addIssue({start,end:start+word.length,context,kind:reference?'reference':kind,message:hint[0],detail,why,steps,ignorable:true});
+  addIssue({start,end:start+word.length,context,kind:reference?'reference':kind,message:hint[0],detail:[detail,suffix],why,steps,ignorable:true});
  }
  function principle(id,start,end,reason){
   if(options.principles===false||seenPrinciples.has(id)||(options.disabledPrinciples||[]).includes(id))return;
-  seenPrinciples.add(id);principles.push({id,start,end,reason,...concepts[id]});
+  seenPrinciples.add(id);
+  const {title,definition,question,explanation}=concepts[id];
+  principles.push({id,start,end,reason:translate(reason),title:translate(title),definition:translate(definition),question:translate(question),explanation:translate(explanation)});
  }
  function indentation(code,offset,starts){
   if(options.indentationHints===false)return;
@@ -471,13 +475,18 @@ function analyze(text, language, options={}) {
  else if(language==='html')htmlAnalyze(text);
  for(const issue of issues){
   const names={case:'Hoofdletters',order:'Lettervolgorde',chunks:'Volgorde van woorddelen',missing:'Ontbrekende letter',extra:'Extra letter',repeated:'Herhaalde letter',shape:'Gelijkende tekens',separators:'Woordgrenzen',reference:'Naam consequent overnemen',letters:'Letters vergelijken',syntax:'Structuur en leestekens',convention:'Schrijfafspraak',logic:'Bedoeling controleren'};
-  issue.family=names[issue.kind]||'Aandachtspunt';
+  issue.family=translate(names[issue.kind]||'Aandachtspunt');
+  issue.context=translate(issue.context);
+  issue.message=translate(issue.message);
+  issue.detail=Array.isArray(issue.detail)?issue.detail.map(part=>translate(part)).join(''):translate(issue.detail);
+  if(issue.why)issue.why=translate(issue.why);
+  if(issue.steps)issue.steps=issue.steps.map(step=>translate(step));
  }
  const limit=Math.max(1,Math.min(options.maxHints||8,100));
  issues.sort((a,b)=>a.start-b.start);
  const maxPrinciples=Math.max(1,Math.min(options.maxPrinciples||8,30));
  const priority=['styling','tokens','dry','es6'];
  principles.sort((a,b)=>(priority.includes(a.id)?priority.indexOf(a.id):10)-(priority.includes(b.id)?priority.indexOf(b.id):10));
- return {issues:issues.slice(0,limit),principles:principles.slice(0,maxPrinciples),principleNotice:principles.length>maxPrinciples?`Eerst ${maxPrinciples} ideeën. Je kunt het maximum verhogen in de instellingen.`:'',total:issues.length,notice:issues.length>limit?`Er zijn meer aandachtspunten. Eerst deze ${limit}; de rest verschijnt na je aanpassingen.`:''};
+ return {issues:issues.slice(0,limit),principles:principles.slice(0,maxPrinciples),principleNotice:principles.length>maxPrinciples?translate('Eerst {limit} ideeën. Je kunt het maximum verhogen in de instellingen.',{limit:maxPrinciples}):'',total:issues.length,notice:issues.length>limit?translate('Er zijn meer aandachtspunten. Eerst deze {limit}; de rest verschijnt na je aanpassingen.',{limit}):''};
 }
 module.exports={analyze,distance,classify,concepts};

@@ -1,7 +1,7 @@
 {
   "name": "codekompas",
-  "version": "0.2.0",
-  "description": "Nederlandstalige codehints zonder correcties, met een apart luik voor programmeerprincipes.",
+  "version": "0.2.3",
+  "description": "%description%",
   "main": "./dist/extension.js",
   "scripts": {
     "test": "node --test test/*.test.js",
@@ -26,7 +26,7 @@
     "vscode-html-languageservice": "^5.6.2",
     "vscode-languageserver-textdocument": "^1.0.15"
   },
-  "displayName": "CodeKompas — leren zonder voorzeggen",
+  "displayName": "%displayName%",
   "publisher": "codekompas",
   "engines": {
     "vscode": "^1.85.0"
@@ -43,7 +43,7 @@
   "capabilities": {
     "untrustedWorkspaces": {
       "supported": true,
-      "description": "Analyseert alleen tekst, voert geen leerlingcode uit."
+      "description": "%untrusted%"
     },
     "virtualWorkspaces": true
   },
@@ -51,19 +51,23 @@
     "commands": [
       {
         "command": "codekompas.open",
-        "title": "CodeKompas: Open leerhulp"
+        "title": "%codekompas.open%"
       },
       {
         "command": "codekompas.analyze",
-        "title": "CodeKompas: Nu analyseren"
+        "title": "%codekompas.analyze%"
       },
       {
         "command": "codekompas.pause",
-        "title": "CodeKompas: Pauzeer of hervat hints"
+        "title": "%codekompas.pause%"
       },
       {
         "command": "codekompas.resetIgnored",
-        "title": "CodeKompas: Herstel genegeerde woorden"
+        "title": "%codekompas.resetIgnored%"
+      },
+      {
+        "command": "codekompas.toggleLanguage",
+        "title": "%codekompas.toggleLanguage%"
       }
     ],
     "viewsContainers": {
@@ -80,7 +84,7 @@
         {
           "type": "webview",
           "id": "codekompas.panel",
-          "name": "Leerhulp"
+          "name": "%panel%"
         }
       ]
     },
@@ -90,33 +94,33 @@
         "codekompas.enabled": {
           "type": "boolean",
           "default": true,
-          "description": "Schakel de lokale codehints in."
+          "description": "%codekompas.enabled%"
         },
         "codekompas.principles": {
           "type": "boolean",
           "default": true,
-          "description": "Toon ook programmeerprincipes in het aparte luik."
+          "description": "%codekompas.principles%"
         },
         "codekompas.maxHints": {
           "type": "number",
           "default": 8,
           "minimum": 1,
           "maximum": 100,
-          "description": "Maximaal aantal gelijktijdige hints per bestand."
+          "description": "%codekompas.maxHints%"
         },
         "codekompas.delay": {
           "type": "number",
           "default": 900,
           "minimum": 200,
           "maximum": 5000,
-          "description": "Rusttijd na het typen, in milliseconden."
+          "description": "%codekompas.delay%"
         },
         "codekompas.maxCharacters": {
           "type": "number",
           "default": 250000,
           "minimum": 1000,
           "maximum": 1000000,
-          "description": "Sla grotere bestanden over om de editor vlot te houden."
+          "description": "%codekompas.maxCharacters%"
         },
         "codekompas.ignoreWords": {
           "type": "array",
@@ -124,7 +128,7 @@
             "type": "string"
           },
           "default": [],
-          "description": "Bewust gebruikte namen waarvoor geen spellinghint nodig is."
+          "description": "%codekompas.ignoreWords%"
         },
         "codekompas.disabledPrinciples": {
           "type": "array",
@@ -164,24 +168,24 @@
             ]
           },
           "default": [],
-          "description": "Principes die nog niet aan bod hoeven te komen."
+          "description": "%codekompas.disabledPrinciples%"
         },
         "codekompas.maxPrinciples": {
           "type": "number",
           "default": 8,
           "minimum": 1,
           "maximum": 30,
-          "description": "Maximaal aantal conceptkaarten tegelijk in de aparte tab."
+          "description": "%codekompas.maxPrinciples%"
         },
         "codekompas.styleConventions": {
           "type": "boolean",
           "default": true,
-          "description": "Toon leesbaarheidsadvies voor hoofdletters in geldige standaard CSS-eigenschappen. Dit zijn geen syntaxfouten."
+          "description": "%codekompas.styleConventions%"
         },
         "codekompas.indentationHints": {
           "type": "boolean",
           "default": true,
-          "description": "Signaleer gemengde tabs en spaties bij code-inspringing als leesbaarheidsadvies, niet als syntaxfout."
+          "description": "%codekompas.indentationHints%"
         }
       }
     }
