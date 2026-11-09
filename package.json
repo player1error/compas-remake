@@ -194,5 +194,9 @@
     "@vscode/vsce": "^4.0.0",
     "esbuild": "^0.28.2",
     "jsdom": "^26.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/player1error/compas-remake.git"
   }
 }
